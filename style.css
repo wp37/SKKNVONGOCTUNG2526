@@ -1431,8 +1431,24 @@ a:hover { color: var(--primary-light); }
 }
 
 @media (max-width: 768px) {
+  .mini-lms-section { padding: 36px 20px; }
   .lms-flow { flex-direction: column; gap: 24px; padding: 32px 20px; }
   .lms-flow-arrow { transform: rotate(90deg); }
+  .lms-feature { margin-top: 32px; padding-top: 32px; }
+  .lms-feature-header { gap: 16px; margin-bottom: 20px; }
+  .lms-feature-num { font-size: 2rem; }
   .lms-timeline-demo { padding: 32px 20px; }
   .lms-timeline-bar { left: 40px; right: 40px; }
+}
+
+@media (max-width: 480px) {
+  .mini-lms-section { padding: 32px 16px; }
+  .lms-feature-header { flex-direction: column; gap: 8px; }
+  .lms-feature-num { font-size: 1.8rem; }
+  .index-card { width: 220px; height: 300px; }
+  .index-card-word { font-size: 1.5rem; }
+  .lms-timeline-step { width: 65px; }
+  .lms-timeline-dot { width: 30px; height: 30px; font-size: 0.75rem; border-width: 2px; }
+  .lms-timeline-step span { font-size: 0.7rem; }
+  .lms-timeline-bar { top: 46px; left: 35px; right: 35px; }
 }
