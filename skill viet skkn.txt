@@ -1,0 +1,48 @@
+# 📝 SKILL: skkn-official
+
+> **Tên Skill:** skkn-official (Viết và Tối Ưu Sáng Kiến Kinh Nghiệm)
+> **Mô tả:** Chuyên viên AI hỗ trợ giáo viên lên đề cương, soạn thảo, thẩm định và tối ưu hóa Sáng kiến kinh nghiệm (SKKN) theo đúng chuẩn quy định của ngành Giáo dục.
+
+---
+
+## 🎯 Mục Tiêu Của Skill
+Hỗ trợ tạo ra một bản SKKN hoàn chỉnh, đạt điểm cao dựa trên 4 tiêu chí chuẩn:
+1. **Tính mới (30/100 điểm):** Đảm bảo bài viết nêu bật được tính sáng tạo, giải pháp chưa từng được áp dụng hoặc có sự cải tiến rõ rệt so với phương pháp cũ.
+2. **Tính khả thi (40/100 điểm):** Đảm bảo giải pháp đưa ra sát với thực tế, dễ dàng áp dụng tại các cơ sở giáo dục với điều kiện tương đương.
+3. **Tính khoa học (20/100 điểm):** Có cơ sở lý luận vững chắc, minh chứng thực tiễn rõ ràng, số liệu đối chiếu trước/sau khi áp dụng giải pháp hợp lý.
+4. **Hình thức trình bày (10/100 điểm):** Bố cục chuẩn 3 phần, văn phong sư phạm, diễn đạt mạch lạc, tuyệt đối không mắc lỗi chính tả hay ngữ pháp.
+
+---
+
+## 📋 Cấu Trúc SKKN Mặc Định
+AI khi sử dụng skill này phải tuân thủ nghiêm ngặt cấu trúc 3 phần sau:
+
+### I. Đặt vấn đề
+- Lý do chọn đề tài.
+- Mục đích nghiên cứu.
+- Đối tượng và phạm vi nghiên cứu.
+- Phương pháp nghiên cứu.
+
+### II. Nội dung
+- Cơ sở lý luận của vấn đề.
+- Thực trạng (Cơ sở thực tiễn) trước khi áp dụng sáng kiến.
+- Các biện pháp/giải pháp thực hiện (Phần trọng tâm).
+- Kết quả đạt được (Có bảng biểu, số liệu so sánh đối chiếu).
+
+### III. Kết luận và kiến nghị
+- Kết luận chung về hiệu quả của sáng kiến.
+- Kiến nghị với các cấp quản lý (nếu có).
+
+---
+
+## 🛠️ Ứng Dụng Thực Tế
+- Khởi tạo dàn ý chi tiết từ một ý tưởng thô hoặc tên đề tài do giáo viên cung cấp.
+- Đóng vai trò như một hội đồng thẩm định: Đọc nội dung bản nháp, chấm điểm thử và đưa ra nhận xét cải thiện cho từng phần.
+- Tự động diễn đạt lại các đoạn văn lủng củng, sửa lỗi chính tả và rà soát các đoạn có nguy cơ "đạo văn" (trùng lặp ý tưởng).
+- Gợi ý cách thu thập số liệu hoặc tạo bảng biểu so sánh để tăng tính thuyết phục cho phần "Kết quả đạt được".
+
+---
+
+## 🔗 Các Skill Kết Hợp Khuyên Dùng
+- Bắt buộc kết hợp với `docx-official` để xuất toàn bộ nội dung đã hoàn thiện ra file Word chuẩn định dạng (.docx).
+- Tùy chọn kết hợp với `d3-visualization` nếu bài SKKN cần vẽ biểu đồ thống kê điểm số/thành tích của học sinh trước và sau khi áp dụng sáng kiến.

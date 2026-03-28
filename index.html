@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKKN — Khai thác AI & Điện toán đám mây xây dựng Web App EZTOOL4teach</title>
+  <meta name="description" content="Sáng kiến kinh nghiệm: Khai thác hệ sinh thái Google, Antigravity AI và nền tảng điện toán đám mây để xây dựng Web App EZTOOL4teach tích hợp AI NotebookLM nhằm tự động hóa biên soạn đề kiểm tra Tiếng Anh tại trường THCS Nguyễn Văn Bánh.">
+  <meta name="author" content="Thầy Võ Tùng — Giáo viên Tiếng Anh, THCS Nguyễn Văn Bánh">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════ TOPBAR ═══════ -->
+<header class="topbar" id="topbar">
+  <div class="topbar-brand">
+    <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#D4A843"/><path d="M14 16h14c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H14V16z" fill="#0a0a0f" opacity=".9"/><path d="M18 14h14c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H18V14z" fill="#0a0a0f"/><path d="M22 20l3 3 5-5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    EZTOOL4teach — SKKN
+  </div>
+  <nav class="topbar-nav" id="topbar-nav">
+    <a href="#phan1">Phần I</a>
+    <a href="#phan2">Phần II</a>
+    <a href="#insight">Insight AI</a>
+    <a href="#phan3">Kết quả</a>
+    <a href="#phan4">Kết luận</a>
+  </nav>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</header>
+
+<!-- ═══════ SIDEBAR OVERLAY ═══════ -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- ═══════ LAYOUT ═══════ -->
+<div class="layout">
+
+  <!-- ── Sidebar (TOC) ── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">Mục lục</div>
+    <ul class="toc-list" id="toc-list">
+      <li><a href="#phan1" data-section="phan1">
+        <span class="toc-icon">📌</span> Phần I: Đặt vấn đề
+      </a></li>
+      <li><a href="#thuctrang" data-section="thuctrang">
+        <span class="toc-icon">📊</span> Thực trạng
+      </a></li>
+      <li><a href="#phan2" data-section="phan2">
+        <span class="toc-icon">⚙️</span> Phần II: Biện pháp
+      </a></li>
+      <li><a href="#insight" data-section="insight">
+        <span class="toc-icon">🤖</span> Insight Antigravity
+      </a></li>
+      <li><a href="#github-eco" data-section="github-eco">
+        <span class="toc-icon">📦</span> GitHub Ecosystem
+      </a></li>
+      <li><a href="#phan3" data-section="phan3">
+        <span class="toc-icon">📈</span> Phần III: Kết quả
+      </a></li>
+      <li><a href="#phan4" data-section="phan4">
+        <span class="toc-icon">✅</span> Phần IV: Kết luận
+      </a></li>
+    </ul>
+  </aside>
+
+  <!-- ── Main ── -->
+  <main class="main-content">
+
+    <!-- ═══════ HERO ═══════ -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-badge">📘 Sáng kiến kinh nghiệm — Năm học 2025–2026</div>
+        <h1>
+          Khai thác hệ sinh thái Google & Antigravity AI để xây dựng Web App
+          <span class="highlight">EZTOOL4teach</span>
+          tích hợp NotebookLM nhằm tự động hóa biên soạn đề kiểm tra Tiếng Anh
+        </h1>
+        <p class="hero-desc">
+          Ứng dụng quy trình công nghệ khép kín 4 tầng — từ AI phân tích ngữ liệu đến triển khai điện toán đám mây — với chi phí vận hành <strong style="color:#FFB74D">0 đồng</strong>, giải phóng hoàn toàn sức lao động thủ công của giáo viên.
+        </p>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Tác giả: <strong>Thầy Võ Tùng</strong>
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            Giáo viên Tiếng Anh
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            THCS Nguyễn Văn Bánh
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Năm học 2025 – 2026
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ PHẦN I: ĐẶT VẤN ĐỀ ═══════ -->
+    <section class="content-section" id="phan1">
+      <div class="section-header animate-on-scroll">
+        <div class="section-number">I</div>
+        <h2><small>Phần I</small>Đặt vấn đề</h2>
+      </div>
+
+      <!-- 1. Lý do chọn đề tài -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>1. Lý do chọn đề tài</h3>
+      <p class="content-text animate-on-scroll">
+        Trong bối cảnh thực hiện Chương trình Giáo dục phổ thông 2018, việc đổi mới phương pháp kiểm tra đánh giá môn Tiếng Anh đòi hỏi nguồn ngữ liệu <strong>phong phú, cập nhật</strong> và bám sát thực tiễn giao tiếp quốc tế. Tuy nhiên, giáo viên tại các trường THCS — đặc biệt ở vùng nông thôn — thường gặp phải những rào cản nghiêm trọng:
+      </p>
+
+      <div class="card-grid animate-on-scroll">
+        <div class="card">
+          <div class="card-icon orange">⏰</div>
+          <h4>Tốn thời gian</h4>
+          <p>Giáo viên mất trung bình <strong>90–120 phút</strong> để tìm kiếm ngữ liệu, thiết kế ma trận và trộn đề thủ công trên Microsoft Word cho <em>một</em> đề kiểm tra hoàn chỉnh.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon red">⚠️</div>
+          <h4>AI "ảo giác" (Hallucination)</h4>
+          <p>Các công cụ AI tạo sinh thông thường (ChatGPT, Copilot) dễ cung cấp kiến thức <strong>sai lệch</strong> hoặc vượt quá chương trình cấp THCS, tạo ra đề thi không sát thực tế.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon blue">🔁</div>
+          <h4>Tài liệu cũ, dễ gian lận</h4>
+          <p>Học sinh dễ dàng tìm thấy đáp án trên mạng vì giáo viên sử dụng lại nguồn tài liệu đã phổ biến, đặc biệt với các bài đọc hiểu và bài nghe.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">💰</div>
+          <h4>Chi phí hạ tầng</h4>
+          <p>Chưa có một nền tảng miễn phí, tập trung để lưu trữ và phân phối bài kiểm tra trực tuyến có khả năng chịu tải cao cho toàn trường.</p>
+        </div>
+      </div>
+
+      <div class="content-highlight accent animate-on-scroll" style="margin-top:28px">
+        <p>💡 Với tiêu chí <strong>"chi phí 0 đồng, hiệu quả tối đa"</strong>, tôi quyết định nghiên cứu và ứng dụng quy trình công nghệ khép kín — từ khâu thu thập học liệu bằng AI đến khâu triển khai ứng dụng trên đám mây — hình thành nên đề tài sáng kiến này.</p>
+      </div>
+
+      <!-- 2. Mục đích nghiên cứu -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>2. Mục đích nghiên cứu</h3>
+      <ul class="method-list animate-on-scroll">
+        <li>Tự động hóa quy trình soạn đề kiểm tra (15 phút, 1 tiết, học kỳ) môn Tiếng Anh đảm bảo tính <strong>chính xác, khách quan</strong> và <strong>chống gian lận</strong>.</li>
+        <li>Xây dựng một hệ thống Web App (<strong>EZTOOL4teach</strong>) hoàn chỉnh, hoạt động ổn định trên môi trường internet để phục vụ công tác kiểm tra đánh giá tại trường THCS Nguyễn Văn Bánh.</li>
+        <li>Khẳng định khả năng <strong>tự chủ công nghệ</strong> của giáo viên trong bối cảnh chuyển đổi số giáo dục, thiết lập quy trình EdTech chuyên nghiệp với chi phí vận hành 0 đồng.</li>
+      </ul>
+
+      <!-- 3. Đối tượng & phạm vi -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>3. Đối tượng và phạm vi nghiên cứu</h3>
+      <p class="content-text animate-on-scroll">
+        <strong>Đối tượng:</strong> Học sinh các khối 7, 8, 9 tại trường THCS Nguyễn Văn Bánh.<br>
+        <strong>Phạm vi ứng dụng:</strong> Các bài kiểm tra thường xuyên (15 phút) và định kỳ (1 tiết) môn Tiếng Anh; quy trình số hóa tài liệu giảng dạy của giáo viên; hệ thống trắc nghiệm trực tuyến tích hợp đa phương tiện.
+      </p>
+
+      <!-- 4. Phương pháp nghiên cứu -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>4. Phương pháp nghiên cứu</h3>
+      <ul class="method-list animate-on-scroll">
+        <li><strong>Phương pháp thực nghiệm:</strong> Xây dựng hệ thống, triển khai thực tế trong 2 học kỳ, thu thập phản hồi và số liệu so sánh trước/sau.</li>
+        <li><strong>Phương pháp khảo sát:</strong> Phiếu khảo sát giáo viên về thời gian soạn đề, mức độ hài lòng với công cụ.</li>
+        <li><strong>Phương pháp thống kê:</strong> So sánh đối chiếu kết quả học tập của học sinh trước và sau khi áp dụng sáng kiến.</li>
+        <li><strong>Phương pháp nghiên cứu tài liệu:</strong> Tổng hợp lý luận về chuyển đổi số, AI trong giáo dục, điện toán đám mây.</li>
+      </ul>
+    </section>
+
+    <!-- ═══════ THỰC TRẠNG ═══════ -->
+    <section class="content-section" id="thuctrang">
+      <div class="section-header animate-on-scroll">
+        <div class="section-number">📊</div>
+        <h2><small>Cơ sở thực tiễn</small>Thực trạng trước khi áp dụng sáng kiến</h2>
+      </div>
+
+      <p class="content-text animate-on-scroll">
+        Khảo sát thực tế tại trường THCS Nguyễn Văn Bánh trong năm học 2023–2024 (trước khi áp dụng sáng kiến) cho thấy những hạn chế rõ rệt trong công tác kiểm tra đánh giá môn Tiếng Anh:
+      </p>
+
+      <!-- Stats overview -->
+      <div class="stats-row animate-on-scroll">
+        <div class="stat-card">
+          <div class="stat-value accent">68.7%</div>
+          <div class="stat-label">HS có xu hướng học thuộc lòng, thiếu khả năng phân tích</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">90–120</div>
+          <div class="stat-label">phút trung bình để GV soạn 1 đề hoàn chỉnh</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value danger">85%</div>
+          <div class="stat-label">GV phải tìm ngữ liệu thủ công trên Google</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value success">45.7%</div>
+          <div class="stat-label">HS hứng thú khi được tiếp cận CNTT trong học tập</div>
+        </div>
+      </div>
+
+      <div class="content-highlight animate-on-scroll">
+        <p>📌 Công tác soạn đề thi chủ yếu làm trên <strong>Microsoft Word</strong>, tìm kiếm ngữ liệu thủ công trên Google Search. Chưa có nền tảng tập trung để phân phối bài kiểm tra trực tuyến có khả năng chịu tải cao cho toàn trường.</p>
+      </div>
+
+      <!-- Mức độ hứng thú -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>Mức độ hứng thú của học sinh với CNTT trong kiểm tra đánh giá</h3>
+      <div class="charts-grid animate-on-scroll">
+        <div class="chart-container">
+          <h4>📊 Khảo sát mức độ hứng thú HS (Năm học 2023–2024)</h4>
+          <div class="chart-wrapper">
+            <canvas id="chart-interest"></canvas>
+          </div>
+        </div>
+        <div class="chart-container">
+          <h4>⏱️ Thời gian soạn đề trung bình của GV (phút)</h4>
+          <div class="chart-wrapper">
+            <canvas id="chart-time"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ PHẦN II: BIỆN PHÁP ═══════ -->
+    <section class="content-section" id="phan2">
+      <div class="section-header animate-on-scroll">
+        <div class="section-number">II</div>
+        <h2><small>Phần II</small>Nội dung và biện pháp thực hiện</h2>
+      </div>
+
+      <!-- Cơ sở lý luận -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>1. Cơ sở lý luận</h3>
+      <p class="content-text animate-on-scroll">
+        Chuyển đổi số trong giáo dục là xu thế tất yếu được Bộ Giáo dục và Đào tạo khẳng định qua Đề án 06 và Chương trình GDPT 2018. Trong đó, việc ứng dụng <strong>trí tuệ nhân tạo (AI)</strong> vào công tác dạy–học và kiểm tra đánh giá được xem là đòn bẩy quan trọng nhất để nâng cao chất lượng giáo dục. Tuy nhiên, cần phân biệt rõ hai mô hình AI:
+      </p>
+      <div class="card-grid animate-on-scroll">
+        <div class="card">
+          <div class="card-icon red">🌐</div>
+          <h4>AI Tạo sinh mở (Open Generative AI)</h4>
+          <p>Ví dụ: ChatGPT, Gemini (chế độ mở). Dễ mắc lỗi "ảo giác" (hallucination) — tạo ra thông tin sai, không thể kiểm chứng nguồn gốc. <strong>Không phù hợp</strong> cho soạn đề kiểm tra đòi hỏi tính chính xác tuyệt đối.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">🔒</div>
+          <h4>AI Grounded (Dữ liệu khép kín)</h4>
+          <p>Ví dụ: <strong>Google NotebookLM</strong>. Chỉ phân tích và trích xuất từ nguồn dữ liệu do giáo viên cung cấp, loại bỏ hoàn toàn rủi ro sai lệch kiến thức. <strong>Đây là lựa chọn tối ưu.</strong></p>
+        </div>
+      </div>
+
+      <!-- Quy trình 4 tầng -->
+      <h3 class="sub-heading animate-on-scroll" style="margin-top:40px"><span class="sub-icon"></span>2. Các biện pháp thực hiện — Quy trình công nghệ 5 tầng</h3>
+
+      <div class="process-flow animate-on-scroll">
+        <div class="process-step"><span class="step-num">1</span> MCP NotebookLM</div>
+        <span class="process-arrow">→</span>
+        <div class="process-step"><span class="step-num">2</span> Antigravity AI</div>
+        <span class="process-arrow">→</span>
+        <div class="process-step"><span class="step-num">3</span> GitHub + Vercel</div>
+        <span class="process-arrow">→</span>
+        <div class="process-step"><span class="step-num">4</span> Google Apps Script</div>
+        <span class="process-arrow">→</span>
+        <div class="process-step"><span class="step-num">5</span> Google Sheets</div>
+      </div>
+
+      <div class="timeline animate-on-scroll">
+        <!-- Tầng 1 -->
+        <div class="timeline-item">
+          <span class="tier-badge">🧠 Tầng 1 — Thu thập & Xử lý lõi bằng MCP</span>
+          <h4>MCP NotebookLM — Model Context Protocol</h4>
+          <div class="timeline-card">
+            <p class="content-text" style="margin-bottom:12px">
+              <strong>Xây dựng Nguồn dữ liệu (Grounding):</strong> Sử dụng Google Drive làm kho lưu trữ các file PDF Sách giáo khoa (Global Success 7, 8, 9), file Audio bài học. Đặc biệt, tận dụng hệ sinh thái YouTube để lấy các đường link video tiếng Anh thực tế, bản ngữ.
+            </p>
+            <p class="content-text" style="margin-bottom:12px">
+              <strong>Phân tích bằng NotebookLM (MCP — Model Context Protocol):</strong> Thay vì dùng ChatGPT, tôi đưa toàn bộ nguồn dữ liệu trên vào <strong>Google NotebookLM</strong> — hệ thống AI hoạt động theo chuẩn <strong>MCP (Model Context Protocol)</strong>. Đây là giao thức cho phép mô hình AI chỉ truy xuất và phân tích trong phạm vi dữ liệu được cung cấp (<em>grounded context</em>), đóng vai trò <em>"Trợ lý chuyên môn khép kín"</em>:
+            </p>
+            <ul class="method-list">
+              <li><strong>Grounding 100%:</strong> NotebookLM chỉ trả lời dựa trên nguồn dữ liệu do giáo viên tải lên — PDF sách giáo khoa, audio, link YouTube — không "bịa" thông tin từ internet.</li>
+              <li>Trích xuất phụ đề (transcript) từ link YouTube và tóm tắt nội dung, tự động phân loại theo chủ đề/unit.</li>
+              <li>Tự động sinh ra hệ thống câu hỏi trắc nghiệm (Multiple Choice), câu hỏi Đúng/Sai (True/False), điền từ (Fill-in-the-blank) bám sát <strong>100% ngữ liệu gốc</strong>.</li>
+              <li>Hỗ trợ giáo viên tạo <strong>Audio Overview</strong> — podcast AI tóm tắt nội dung bài học bằng giọng nói tự nhiên, giúp học sinh ôn tập qua nghe.</li>
+              <li>Loại bỏ hoàn toàn rủi ro "ảo giác" AI — mọi câu hỏi đều có <strong>nguồn gốc truy vết</strong> được (trích dẫn inline citations).</li>
+            </ul>
+
+            <div class="content-highlight" style="margin-top:16px">
+              <p>🔗 <strong>Tại sao chọn MCP NotebookLM thay vì ChatGPT?</strong> MCP đảm bảo mô hình AI không truy cập internet mở, chỉ xử lý trong phạm vi nguồn dữ liệu giáo viên cung cấp. Điều này giải quyết triệt để vấn đề <strong>"AI hallucination"</strong> — rủi ro lớn nhất khi dùng AI tạo sinh trong giáo dục.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tầng 2 -->
+        <div class="timeline-item">
+          <span class="tier-badge">🎨 Tầng 2 — Thiết kế & Logic điều phối</span>
+          <h4>Antigravity AI & Web App "EZTOOL4teach"</h4>
+          <div class="timeline-card">
+            <p class="content-text" style="margin-bottom:12px">
+              Nhằm đưa kết quả từ AI đến với học sinh một cách <strong>thân thiện, chuyên nghiệp</strong> nhất, tôi sử dụng nền tảng <strong>Antigravity — công cụ AI pair-programming</strong> của Google DeepMind để xây dựng Web App mang thương hiệu EZTOOL4teach.
+            </p>
+            <ul class="method-list">
+              <li>Ứng dụng được thiết kế phân loại rõ ràng theo từng <strong>khối lớp</strong>, từng <strong>mã bài kiểm tra</strong> (VD: Mã KT15P-L3 cho khối 7, 8, 9).</li>
+              <li>Web App tích hợp module tự động chuyển đổi dữ liệu thô từ NotebookLM thành hệ thống trắc nghiệm trực tuyến với <strong>giao diện chuyên nghiệp, bộ đếm ngược, chống gian lận</strong>.</li>
+              <li>Kết quả kiểm tra được <strong>tự động gửi về Google Sheets</strong> để giáo viên phân tích điểm theo thời gian thực.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tầng 3 -->
+        <div class="timeline-item">
+          <span class="tier-badge">📦 Tầng 3 — Quản trị & Triển khai</span>
+          <h4>GitHub + Vercel — Version Control & Cloud Deployment</h4>
+          <div class="timeline-card">
+            <p class="content-text" style="margin-bottom:12px">
+              Toàn bộ mã nguồn của hệ thống EZTOOL4teach được lưu trữ trên <strong>GitHub</strong> (40 repositories) và triển khai tự động qua <strong>Vercel CDN</strong> toàn cầu.
+            </p>
+            <ul class="method-list">
+              <li><strong>An toàn dữ liệu tuyệt đối</strong> — tránh mất mát công sức lập trình khi máy tính gặp sự cố.</li>
+              <li>Dễ dàng <strong>nâng cấp, thêm mới tính năng</strong> (module luyện nghe, bộ đề mới) theo từng học kỳ mà không làm gián đoạn hệ thống cũ.</li>
+              <li>Vercel cung cấp hạ tầng máy chủ phân tán toàn cầu (<strong>CDN</strong>) hoàn toàn miễn phí — hàng trăm HS truy cập đồng thời mà <strong>không bao giờ sập web</strong>.</li>
+              <li>Mỗi khi push code mới lên GitHub, Vercel <strong>tự động build & deploy</strong> trong 30 giây — không cần thao tác thủ công.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tầng 4: Google Apps Script -->
+        <div class="timeline-item">
+          <span class="tier-badge">⚡ Tầng 4 — Thu thập kết quả tự động</span>
+          <h4>Google Apps Script — Backend "Serverless" miễn phí</h4>
+          <div class="timeline-card">
+            <p class="content-text" style="margin-bottom:12px">
+              Đây là <strong>"trái tim"</strong> của hệ thống thu thập dữ liệu. Google Apps Script đóng vai trò như một <strong>API endpoint (Web App)</strong> miễn phí, nhận dữ liệu từ bài kiểm tra của học sinh và ghi vào Google Sheets theo thời gian thực.
+            </p>
+
+            <h4 style="margin:16px 0 10px; font-size:0.95rem;">📋 Cách hoạt động của Google Apps Script:</h4>
+            <ul class="method-list">
+              <li><strong>Bước 1:</strong> Giáo viên tạo một Google Sheets mới → mở <strong>Extensions → Apps Script</strong> → viết hàm <code style="background:rgba(212,168,67,0.15); padding:2px 6px; border-radius:4px; color:#E8C468; font-family:var(--font-mono); font-size:0.82rem;">doPost(e)</code> để nhận dữ liệu HTTP POST.</li>
+              <li><strong>Bước 2:</strong> Deploy Apps Script thành <strong>Web App</strong> (chọn "Execute as: Me" và "Who has access: Anyone") → nhận được một URL endpoint.</li>
+              <li><strong>Bước 3:</strong> Trong code quiz HTML/JS (do Antigravity tạo), khi học sinh nộp bài → hàm <code style="background:rgba(212,168,67,0.15); padding:2px 6px; border-radius:4px; color:#E8C468; font-family:var(--font-mono); font-size:0.82rem;">fetch()</code> gửi dữ liệu (họ tên, lớp, điểm, thời gian, chi tiết từng câu) đến URL endpoint trên.</li>
+              <li><strong>Bước 4:</strong> Apps Script tự động <strong>parse JSON</strong> → ghi 1 dòng mới vào Google Sheets → trả kết quả thành công cho học sinh.</li>
+            </ul>
+
+            <h4 style="margin:16px 0 10px; font-size:0.95rem;">📊 Dữ liệu được ghi tự động:</h4>
+            <ul class="method-list">
+              <li><strong>Timestamp</strong> — thời điểm nộp bài chính xác đến giây</li>
+              <li><strong>Họ tên, Lớp</strong> — thông tin định danh học sinh</li>
+              <li><strong>Số câu đúng / Tổng câu</strong> — điểm số tức thì</li>
+              <li><strong>Thời gian làm bài</strong> — tính bằng giây (ví dụ: 487s / 900s)</li>
+              <li><strong>Chi tiết từng câu</strong> — đáp án HS chọn vs đáp án đúng → phân tích lỗi sai theo chủ đề</li>
+            </ul>
+
+            <div class="content-highlight accent" style="margin-top:16px">
+              <p>💡 <strong>Điểm đột phá:</strong> Google Apps Script hoạt động như một serverless function hoàn toàn miễn phí, không cần thuê hosting hay database — giáo viên <strong>không tốn 1 đồng</strong> cho hạ tầng backend. Mọi dữ liệu nằm ngay trên Google Sheets — quen thuộc với tất cả giáo viên.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tầng 5 -->
+        <div class="timeline-item">
+          <span class="tier-badge">📈 Tầng 5 — Phân tích & Đánh giá</span>
+          <h4>Google Sheets — Bảng điều khiển dữ liệu (Dashboard)</h4>
+          <div class="timeline-card">
+            <p class="content-text" style="margin-bottom:12px">
+              Dữ liệu từ Google Apps Script được tập trung vào <strong>Google Sheets</strong>, trở thành bảng điều khiển (dashboard) để giáo viên phân tích kết quả.
+            </p>
+            <ul class="method-list">
+              <li>Tự động tính <strong>điểm trung bình lớp, tỷ lệ đạt/không đạt</strong> bằng công thức Sheets sẵn có.</li>
+              <li><strong>Lọc & sắp xếp</strong> theo lớp, theo khối, theo đề kiểm tra — phục vụ báo cáo chuyên môn.</li>
+              <li>Phát hiện <strong>câu hỏi khó</strong> (tỷ lệ sai cao) → điều chỉnh nội dung dạy-học phù hợp.</li>
+              <li>Xuất file <strong>Excel / PDF</strong> gửi Ban giám hiệu, tổ chuyên môn — không cần phần mềm bổ sung.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ INSIGHT ANTIGRAVITY ═══════ -->
+    <section class="insight-section" id="insight">
+      <div class="section-header animate-on-scroll">
+        <div class="section-number">🤖</div>
+        <h2><small>Minh chứng thực tiễn từ Antigravity AI</small>Insight hành vi ứng dụng công nghệ</h2>
+      </div>
+
+      <p class="content-text animate-on-scroll" style="color:rgba(255,255,255,0.8); max-width:800px; margin-bottom:32px">
+        Dưới đây là <strong style="color:white">10 insight hành vi thực tế</strong> được trích xuất từ nhật ký tương tác giữa giáo viên với <strong style="color:#D4A843">Antigravity — hệ thống AI pair-programming</strong> của Google DeepMind — trong quá trình xây dựng hệ thống EZTOOL4teach. Đây chính là minh chứng sống cho tính khả thi và hiệu quả của sáng kiến.
+      </p>
+
+      <div class="insight-grid animate-on-scroll">
+        <div class="insight-card">
+          <div class="insight-number">1</div>
+          <h4>MCP NotebookLM — AI không "ảo giác"</h4>
+          <p>Sử dụng <strong style="color:#D4A843">Model Context Protocol (MCP)</strong> của NotebookLM để sinh câu hỏi trắc nghiệm chỉ từ nguồn dữ liệu giáo viên cung cấp — PDF sách GK, audio, YouTube — loại bỏ 100% rủi ro sai lệch kiến thức.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">2</div>
+          <h4>Tạo quiz tự động cho 3 khối lớp</h4>
+          <p>Sử dụng Antigravity để code hệ thống quiz HTML/JS cho lớp 7, 8, 9 (Global Success) — tích hợp bộ đếm ngược 15 phút, giao diện chuyên nghiệp, chỉ trong <strong style="color:#D4A843">dưới 30 phút/quiz</strong>.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">3</div>
+          <h4>Google Apps Script — Backend 0 đồng</h4>
+          <p>Viết hàm <strong style="color:#D4A843">doPost(e)</strong> trên Apps Script, deploy thành Web App endpoint — nhận dữ liệu JSON từ quiz và ghi thẳng vào Google Sheets. Không cần thuê server hay database.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">4</div>
+          <h4>Tích hợp Google Sheets tự động</h4>
+          <p>Kết quả kiểm tra được <strong style="color:#D4A843">tự động gửi về Google Sheets</strong> theo thời gian thực: họ tên, lớp, điểm, thời gian làm bài, chi tiết từng câu — giáo viên không cần chấm bài thủ công.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">5</div>
+          <h4>Deploy 0 đồng qua Vercel CDN</h4>
+          <p>Toàn bộ pipeline: Code → Push GitHub → Vercel tự deploy. Hàng trăm HS truy cập đồng thời vào khung giờ kiểm tra mà <strong style="color:#D4A843">không bao giờ sập web</strong>.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">6</div>
+          <h4>Iteration thiết kế UX liên tục</h4>
+          <p>Ban đầu dùng theme cyberpunk → phản hồi "quá chói mắt" → chuyển sang theme transparent nhẹ nhàng. Quy trình <strong style="color:#D4A843">lặp lại-cải tiến</strong> (iteration) đúng chuẩn phát triển phần mềm.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">7</div>
+          <h4>Cơ chế chống gian lận đa lớp</h4>
+          <p>Hệ thống tích hợp: <strong style="color:#D4A843">khóa lịch kiểm tra</strong> (chỉ mở đúng khung giờ), <strong style="color:#D4A843">giới hạn 1 lần nộp</strong> duy nhất, mã bài kiểm tra riêng biệt cho từng khối.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">8</div>
+          <h4>Kiểm thử cẩn thận trước triển khai</h4>
+          <p>Trước mỗi lần phát đề, giáo viên chạy test submission flow trực tiếp trên trình duyệt, xác minh dữ liệu về đúng Google Sheets — đảm bảo <strong style="color:#D4A843">không mất bài làm</strong> của HS nào.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">9</div>
+          <h4>Trang thông báo chuyên nghiệp</h4>
+          <p>Trước mỗi buổi kiểm tra, hệ thống tự động tạo trang <strong style="color:#D4A843">thông báo chi tiết</strong>: hướng dẫn, link bài kiểm tra theo khối, quy định — hình thành hệ sinh thái khép kín.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">10</div>
+          <h4>Quy trình scalable — nhân rộng dễ dàng</h4>
+          <p>Quy trình tạo quiz được <strong style="color:#D4A843">lặp lại thành công cho cả 3 khối</strong> (7, 8, 9) — chứng minh tính scalable, có thể nhân rộng cho bất kỳ bộ môn nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ HỆ SINH THÁI GITHUB ═══════ -->
+    <section class="content-section" id="github-eco">      <div class="section-header animate-on-scroll">
+        <div class="section-number" style="background: linear-gradient(135deg, #24292e 0%, #586069 100%);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12 24 5.37 18.63 0 12 0z"/></svg>
+        </div>
+        <h2><small>Minh chứng từ GitHub — github.com/wp37</small>Hệ sinh thái mã nguồn EZTOOL4teach</h2>
+      </div>
+
+      <p class="content-text animate-on-scroll">
+        Toàn bộ hệ sinh thái EZTOOL4teach được quản lý trên tài khoản GitHub <a href="https://github.com/wp37" target="_blank" style="font-weight:700">github.com/wp37</a> với <strong>40 repositories</strong> — mỗi repo đại diện cho một module chức năng riêng biệt, được deploy tự động qua Vercel. Dưới đây là phân loại các dự án thực tế:
+      </p>
+
+      <!-- GitHub Stats -->
+      <div class="stats-row animate-on-scroll">
+        <div class="stat-card">
+          <div class="stat-value">40</div>
+          <div class="stat-label">Repositories trên GitHub</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value accent">6</div>
+          <div class="stat-label">Ngôn ngữ lập trình sử dụng</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value success">100%</div>
+          <div class="stat-label">Public — chia sẻ cộng đồng</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color: var(--primary)">Auto</div>
+          <div class="stat-label">Deploy tự động qua Vercel</div>
+        </div>
+      </div>
+
+      <!-- Bảng phân loại repos -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>Phân loại hệ thống Repositories theo chức năng</h3>
+      <div class="data-table-wrapper animate-on-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Nhóm chức năng</th>
+              <th>Repositories tiêu biểu</th>
+              <th>Ngôn ngữ</th>
+              <th>Mô tả</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>🧪 Quiz KT 15 phút (Lần 3)</strong></td>
+              <td><a href="https://github.com/wp37/test3k7" target="_blank">test3k7</a>, <a href="https://github.com/wp37/test3k8" target="_blank">test3k8</a>, <a href="https://github.com/wp37/test3k9" target="_blank">test3k9</a></td>
+              <td>HTML</td>
+              <td>Bài kiểm tra 15 phút lần 3 cho khối 7, 8, 9 — tích hợp timer, Google Sheets, chống gian lận</td>
+            </tr>
+            <tr>
+              <td><strong>📝 Kiểm tra giữa kỳ 2</strong></td>
+              <td><a href="https://github.com/wp37/ktgk2-ta7" target="_blank">ktgk2-ta7</a>, <a href="https://github.com/wp37/ktgk2-ta8" target="_blank">ktgk2-ta8</a>, <a href="https://github.com/wp37/ktgk2-ta9" target="_blank">ktgk2-ta9</a></td>
+              <td>Python</td>
+              <td>Đề kiểm tra giữa kỳ 2 môn Tiếng Anh cho 3 khối lớp</td>
+            </tr>
+            <tr>
+              <td><strong>📖 Bài ôn tập Unit</strong></td>
+              <td><a href="https://github.com/wp37/test7-u8" target="_blank">test7-u8</a>, <a href="https://github.com/wp37/test-9-u7" target="_blank">test-9-u7</a>, <a href="https://github.com/wp37/test-9-u8" target="_blank">test-9-u8</a>, <a href="https://github.com/wp37/test8-u8" target="_blank">test8-u8</a></td>
+              <td>HTML</td>
+              <td>Quiz ôn tập theo từng Unit trong sách Global Success</td>
+            </tr>
+            <tr>
+              <td><strong>🔄 Review tổng hợp</strong></td>
+              <td><a href="https://github.com/wp37/review7" target="_blank">review7</a>, <a href="https://github.com/wp37/review9" target="_blank">review9</a>, <a href="https://github.com/wp37/review9-8" target="_blank">review9-8</a></td>
+              <td>HTML</td>
+              <td>Bài ôn tập Review cuối học kỳ — tổng hợp kiến thức nhiều Unit</td>
+            </tr>
+            <tr>
+              <td><strong>📢 Hệ thống thông báo</strong></td>
+              <td><a href="https://github.com/wp37/thongbao" target="_blank">thongbao</a></td>
+              <td>HTML</td>
+              <td>Trang thông báo lịch kiểm tra, hướng dẫn, link bài thi cho toàn trường</td>
+            </tr>
+            <tr>
+              <td><strong>📚 SKKN & Tài liệu</strong></td>
+              <td><a href="https://github.com/wp37/skknvip" target="_blank">skknvip</a>, <a href="https://github.com/wp37/fullskkn" target="_blank">fullskkn</a>, <a href="https://github.com/wp37/skknpro" target="_blank">skknpro</a></td>
+              <td>TypeScript</td>
+              <td>Ứng dụng trình bày & phân tích Sáng kiến kinh nghiệm</td>
+            </tr>
+            <tr>
+              <td><strong>🏫 Bồi dưỡng GV</strong></td>
+              <td><a href="https://github.com/wp37/BDTX-NVB" target="_blank">BDTX-NVB</a></td>
+              <td>TypeScript</td>
+              <td>Hệ thống Bồi dưỡng thường xuyên trường THCS Nguyễn Văn Bánh</td>
+            </tr>
+            <tr>
+              <td><strong>✍️ Công cụ IELTS Writing</strong></td>
+              <td><a href="https://github.com/wp37/giasu-ieltswriting" target="_blank">giasu-ieltswriting</a>, <a href="https://github.com/wp37/ielts-writingtoolvip" target="_blank">ielts-writingtoolvip</a></td>
+              <td>JavaScript</td>
+              <td>Công cụ AI hỗ trợ luyện IELTS Writing — mở rộng ngoài chương trình</td>
+            </tr>
+            <tr>
+              <td><strong>🏆 HSG & Cuộc thi</strong></td>
+              <td><a href="https://github.com/wp37/hsg-khtn" target="_blank">hsg-khtn</a>, <a href="https://github.com/wp37/ung-ho-cuoc-thi-nhuanphutan" target="_blank">ung-ho-cuoc-thi</a></td>
+              <td>Python, TS</td>
+              <td>Hỗ trợ học sinh giỏi & cuộc thi cấp trường/huyện</td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>🌐 Trang chính</strong></td>
+              <td><a href="https://github.com/wp37/page" target="_blank">page</a></td>
+              <td>HTML</td>
+              <td>Landing page chính của hệ sinh thái EZTOOL4teach</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="content-highlight animate-on-scroll" style="margin-top: 24px">
+        <p>📌 <strong>Điểm đặc biệt:</strong> Mỗi repository được kết nối tự động với Vercel thông qua tài khoản <a href="https://vercel.com/ngoctungvo-8718s-projects" target="_blank" style="font-weight:700">ngoctungvo-8718s-projects</a>. Khi giáo viên push code mới lên GitHub, Vercel <strong>tự động build và deploy</strong> trong vòng 30 giây — đảm bảo học sinh luôn truy cập được phiên bản mới nhất mà không cần thao tác kỹ thuật phức tạp.</p>
+      </div>
+    </section>
+
+    <!-- ═══════ PHẦN III: KẾT QUẢ ═══════ -->
+    <section class="content-section" id="phan3">
+      <div class="section-header animate-on-scroll">
+        <div class="section-number">III</div>
+        <h2><small>Phần III</small>Kết quả đạt được</h2>
+      </div>
+
+      <!-- Stats hiệu quả -->
+      <div class="stats-row animate-on-scroll">
+        <div class="stat-card">
+          <div class="stat-value success">90%</div>
+          <div class="stat-label">Giảm thời gian biên soạn đề thi</div>
+          <div class="stat-change up">↑ Đột phá</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value accent">5–10</div>
+          <div class="stat-label">phút cho 1 đề kiểm tra 15 phút hoàn chỉnh</div>
+          <div class="stat-change up">↑ Nhanh x12</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0₫</div>
+          <div class="stat-label">Chi phí vận hành toàn bộ hệ thống</div>
+          <div class="stat-change up">↑ Tiết kiệm 100%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value success">+36.1%</div>
+          <div class="stat-label">Tăng tỷ lệ Khá + Giỏi</div>
+          <div class="stat-change up">↑ Vượt mong đợi</div>
+        </div>
+      </div>
+
+      <!-- Bảng so sánh -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>1. Kết quả định lượng — So sánh xếp loại học lực</h3>
+      <div class="data-table-wrapper animate-on-scroll">
+        <table class="data-table" id="result-table">
+          <thead>
+            <tr>
+              <th>Xếp loại</th>
+              <th>2023–2024 (Trước)</th>
+              <th>2024–2025 (Sau)</th>
+              <th>Thay đổi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Giỏi</strong></td>
+              <td>15.3%</td>
+              <td><strong>38.7%</strong></td>
+              <td><span class="change-badge positive">+23.4%</span></td>
+            </tr>
+            <tr>
+              <td><strong>Khá</strong></td>
+              <td>32.5%</td>
+              <td><strong>45.2%</strong></td>
+              <td><span class="change-badge positive">+12.7%</span></td>
+            </tr>
+            <tr>
+              <td><strong>Trung bình</strong></td>
+              <td>45.3%</td>
+              <td><strong>15.1%</strong></td>
+              <td><span class="change-badge negative">-30.2%</span></td>
+            </tr>
+            <tr>
+              <td><strong>Yếu</strong></td>
+              <td>6.9%</td>
+              <td><strong>1.0%</strong></td>
+              <td><span class="change-badge negative">-5.9%</span></td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>Tổng Khá + Giỏi</strong></td>
+              <td><strong>47.8%</strong></td>
+              <td><strong>83.9%</strong></td>
+              <td><span class="change-badge positive">+36.1%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Charts kết quả -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>2. Biểu đồ so sánh trước/sau</h3>
+      <div class="charts-grid animate-on-scroll">
+        <div class="chart-container">
+          <h4>📊 Phân bố xếp loại trước khi áp dụng (2023–2024)</h4>
+          <div class="chart-wrapper">
+            <canvas id="chart-before"></canvas>
+          </div>
+        </div>
+        <div class="chart-container">
+          <h4>📊 Phân bố xếp loại sau khi áp dụng (2024–2025)</h4>
+          <div class="chart-wrapper">
+            <canvas id="chart-after"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-container animate-on-scroll">
+        <h4>📈 So sánh tổng thể trước và sau khi áp dụng sáng kiến</h4>
+        <div class="chart-wrapper">
+          <canvas id="chart-compare"></canvas>
+        </div>
+      </div>
+
+      <!-- Kết quả định tính -->
+      <h3 class="sub-heading animate-on-scroll"><span class="sub-icon"></span>3. Kết quả định tính</h3>
+      <div class="card-grid animate-on-scroll">
+        <div class="card">
+          <div class="card-icon blue">🧠</div>
+          <h4>Phát triển tư duy</h4>
+          <p>Học sinh phát triển rõ rệt khả năng <strong>phản biện</strong> và kỹ năng <strong>phân tích ngữ cảnh</strong>. Thay vì học thuộc, các em chủ động suy luận nghĩa từ ngữ cảnh và đối chiếu thông tin từ nhiều nguồn.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">🎯</div>
+          <h4>Thái độ tích cực</h4>
+          <p>Chấm dứt tình trạng <strong>thụ động</strong> (ngủ gật, làm việc riêng). Học sinh chủ động đặt câu hỏi và đào sâu vấn đề thông qua hệ sinh thái học tập số — <strong>hào hứng</strong> mỗi khi có bài kiểm tra online.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon orange">💻</div>
+          <h4>Năng lực số</h4>
+          <p>Học sinh sử dụng thành thạo thiết bị để <strong>truy cập bài kiểm tra trực tuyến</strong>, nhập thông tin, quản lý thời gian — rèn luyện kỹ năng số thiết yếu cho thế kỷ 21.</p>
+        </div>
+      </div>
+
+      <!-- Hiệu quả cho GV -->
+      <h3 class="sub-heading animate-on-scroll" style="margin-top:36px"><span class="sub-icon"></span>4. Hiệu quả đối với giáo viên</h3>
+      <div class="content-highlight accent animate-on-scroll">
+        <p>🏆 Khẳng định khả năng <strong>tự chủ công nghệ</strong> của giáo viên — thiết lập thành công một quy trình phát triển phần mềm giáo dục (EdTech) chuyên nghiệp với chi phí vận hành <strong>0 đồng</strong>. Vai trò giáo viên được chuyển đổi từ "người thợ soạn đề" sang <strong>"kỹ sư thiết kế học liệu số"</strong>.</p>
+      </div>
+    </section>
+
+    <!-- ═══════ PHẦN IV: KẾT LUẬN ═══════ -->
+    <section class="content-section conclusion-section" id="phan4">
+      <div class="section-header animate-on-scroll">
+        <div class="section-number">IV</div>
+        <h2><small>Phần IV</small>Kết luận và kiến nghị</h2>
+      </div>
+
+      <div class="conclusion-box animate-on-scroll">
+        <h3>📌 Kết luận</h3>
+        <p class="content-text">
+          Mô hình <strong>EZTOOL4teach</strong> minh chứng cho việc <strong>chuyển đổi số chiều sâu</strong> trong giáo dục hoàn toàn khả thi, ngay cả tại các trường THCS vùng nông thôn. Việc tích hợp sức mạnh phân tích cục bộ của <strong>Google NotebookLM</strong> — giúp loại bỏ hoàn toàn lỗi "ảo giác" AI — kết hợp với năng lực thiết kế ứng dụng qua <strong>Antigravity AI</strong> và hạ tầng triển khai hiện đại (<strong>GitHub + Vercel</strong>) đã:
+        </p>
+        <ul class="method-list">
+          <li><strong>Giải phóng hoàn toàn sức lao động thủ công</strong> của giáo viên Tiếng Anh — giảm 90% thời gian soạn đề.</li>
+          <li><strong>Nâng cao chất lượng đánh giá</strong> — tỷ lệ Khá + Giỏi tăng +36.1% sau khi áp dụng sáng kiến.</li>
+          <li><strong>Chuyển đổi vai trò giáo viên</strong> từ "người thợ soạn đề" sang "kỹ sư thiết kế học liệu số" — tạo dựng năng lực tự chủ công nghệ bền vững.</li>
+          <li><strong>Thiết lập quy trình EdTech hoàn chỉnh</strong> với chi phí vận hành 0 đồng, có thể nhân rộng cho bất kỳ bộ môn nào.</li>
+        </ul>
+      </div>
+
+      <div class="conclusion-box animate-on-scroll" style="margin-top: 24px">
+        <h3>💬 Kiến nghị</h3>
+        <ul class="recommendation-list">
+          <li>
+            <span class="rec-icon">1</span>
+            <span>Nhà trường và <strong>Phòng Giáo dục</strong> có thể lấy mô hình EZTOOL4teach làm tài liệu tham khảo để tổ chức các buổi <strong>tập huấn chuyên đề</strong> về ứng dụng AI và điện toán đám mây cho giáo viên.</span>
+          </li>
+          <li>
+            <span class="rec-icon">2</span>
+            <span><strong>Nhân rộng</strong> việc sử dụng Google NotebookLM và triển khai ứng dụng miễn phí qua Vercel cho <strong>các tổ bộ môn khác</strong> trong toàn huyện/tỉnh — đặc biệt các môn cần ngữ liệu đa phương tiện.</span>
+          </li>
+          <li>
+            <span class="rec-icon">3</span>
+            <span>Hỗ trợ giáo viên tiếp cận các nền tảng <strong>AI pair-programming</strong> (Antigravity, GitHub Copilot) để phát triển các công cụ giáo dục số tùy chỉnh, phù hợp với đặc thù từng trường.</span>
+          </li>
+          <li>
+            <span class="rec-icon">4</span>
+            <span>Đưa <strong>kỹ năng sử dụng công cụ AI và quản lý mã nguồn</strong> vào chương trình bồi dưỡng thường xuyên giáo viên, giúp xây dựng đội ngũ giáo viên số trong giai đoạn chuyển đổi số.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#D4A843"/><path d="M14 16h14c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H14V16z" fill="#0a0a0f" opacity=".9"/><path d="M18 14h14c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H18V14z" fill="#0a0a0f"/><path d="M22 20l3 3 5-5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      EZTOOL4teach
+    </div>
+    <div>
+      © 2025–2026 Thầy Võ Tùng — THCS Nguyễn Văn Bánh<br>
+      Sáng kiến kinh nghiệm Năm học 2025–2026<br>
+      <a href="https://github.com/wp37/SKKNVONGOCTUNG2526" target="_blank" style="color:var(--primary); opacity:0.7; font-size:0.78rem;">📦 Source Code trên GitHub</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/wp37" target="_blank" style="color:var(--text-muted); font-size:0.78rem;">GitHub @wp37</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

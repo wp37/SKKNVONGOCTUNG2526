@@ -1,0 +1,14 @@
+{
+  "name": "skkn-eztool4teach",
+  "version": "1.0.0",
+  "description": "Sáng kiến kinh nghiệm — Khai thác AI & Điện toán đám mây xây dựng Web App EZTOOL4teach tích hợp NotebookLM, năm học 2025–2026",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "start": "npx serve ."
+  },
+  "keywords": ["skkn", "eztool4teach", "education", "ai", "antigravity"],
+  "author": "Thầy Võ Tùng — THCS Nguyễn Văn Bánh",
+  "license": "MIT",
+  "homepage": "https://github.com/wp37/SKKNVONGOCTUNG2526"
+}

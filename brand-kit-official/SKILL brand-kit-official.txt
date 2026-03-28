@@ -1,0 +1,51 @@
+# 🎨 SKILL: brand-kit-official
+
+> **Tên Skill:** brand-kit-official (Xây dựng Bộ Nhận Diện Thương Hiệu - Brand Kit)
+> **Mô tả:** Chuyên gia AI hỗ trợ người dùng (đặc biệt là cá nhân/doanh nghiệp làm Personal Branding) xây dựng và chuẩn hóa Bộ nhận diện thương hiệu hoàn chỉnh gồm 9 thành phần cốt lõi.
+
+---
+
+## 🎯 Mục Tiêu Của Skill
+Giúp người dùng xác định và thiết kế một Brand Kit nhất quán trên mọi nền tảng (Website, Landing Page, Social Media) dựa trên trình tự tối ưu 3 giai đoạn:
+- **Phase 1 (Nền tảng):** Brand Strategy -> Brand Voice -> Colors -> Fonts.
+- **Phase 2 (Visual):** Logo Design -> Graphics & Style -> Icons.
+- **Phase 3 (Hoàn thiện):** Photos -> Charts -> Brand Guidelines (Đóng gói).
+
+---
+
+## 📋 9 Thành Phần Cốt Lõi Cần Triển Khai
+
+### 0. Brand Strategy (Chiến lược nền tảng)
+- Xác định: Sứ mệnh (Mission), Tầm nhìn (Vision), Giá trị cốt lõi (Values), Đối tượng (Target Audience), Điểm khác biệt (USP), Tính cách (Personality).
+
+### 1. Brand Guidelines (Quy tắc sử dụng)
+- Xây dựng Brand Story, Do's & Don'ts, Logo Usage Rules, Tone & Style.
+
+### 2. Logos (Hệ thống Logo)
+- Chuẩn bị các phiên bản: Primary, Secondary, Monochrome, Light/Dark, Favicon.
+
+### 3. Colors (Màu sắc)
+- Bảng màu chuẩn: Primary, Secondary, Accent, Neutral (kèm mã HEX, RGB, CMYK). Đảm bảo Contrast Ratio tối thiểu 4.5:1.
+
+### 4. Fonts (Kiểu chữ)
+- Tối đa 2-3 font: Heading (Thu hút), Body (Dễ đọc), Accent (Đặc biệt). 
+
+### 5. Brand Voice (Giọng văn thương hiệu)
+- Định hình Personality, Tone (Formal/Casual), Xưng hô, Sign-off và Do's & Don'ts trong ngôn từ.
+
+### 6. Photos (Định hướng hình ảnh)
+- Chuẩn bị: Headshot, Work-Life, Behind-scenes, Lifestyle, Hero Images.
+
+### 7. Graphics & Icons (Đồ họa & Biểu tượng)
+- **Graphics:** Patterns, Shapes, Textures, Backgrounds, Card Styles.
+- **Icons:** Style (Outline/Filled), Weight, Corner, Size đồng nhất. Không dùng Emoji thay Icon.
+
+### 8. Charts (Biểu đồ dữ liệu)
+- Đồng bộ Chart Color Palette, Chart Font, Data Labels và Animation với thương hiệu.
+
+---
+
+## 🛠️ Ứng Dụng Thực Tế
+- Đóng vai trò làm Giám đốc Sáng tạo (Art Director) phỏng vấn người dùng để tìm ra "Brand Strategy".
+- Đề xuất bảng màu (Color Palette) và cặp Font (Font pairing) phù hợp với tính cách thương hiệu.
+- Viết văn bản mẫu (Brand Voice) và lên Checklist các hạng mục cần thiết kế.
