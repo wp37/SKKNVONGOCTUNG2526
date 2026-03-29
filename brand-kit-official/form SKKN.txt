@@ -1,0 +1,112 @@
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+
+MÔ TẢ SÁNG KIÊN
+Mã số:...................................................................................................................
+1.Tên sáng kiến: Vận dụng mô hình lớp học đảo ngược trong môn địa lý nhằm phát triển tư duy cấp THCS.
+2.Lĩnh vực áp dụng sáng kiến: Chuyên môn ( Môn Địa lí)
+3. Mô tả bản chất của sáng kiến:
+3.1.Tình trạng giải pháp đã biết:
+- Xuất phát từ mục tiêu của giáo dục Việt Nam thời kì hiện nay: Trong bối cảnh toàn cầu hóa và hội nhập sâu rộng, giáo dục Việt Nam đang trải qua một giai đoạn chuyển mình mạnh mẽ, hướng tới mục tiêu phát triển con người toàn diện. Điều này được thể hiện rõ nét qua tinh thần cốt lõi của Nghị quyết 29-NQ/TW về đổi mới căn bản, toàn diện giáo dục và đào tạo, chú trọng vào việc nâng cao chất lượng nguồn nhân lực và phát triển phẩm chất, năng lực của người học. Để hiện thực hóa tầm nhìn này, việc đổi mới phương pháp dạy học đã trở thành một yêu cầu cấp thiết, không chỉ dừng lại ở việc truyền thụ kiến thức mà còn phải khơi gợi khả năng tư duy độc lập và sáng tạo.
+- Chương trình Giáo dục phổ thông 2018, đặc biệt là đối với môn Địa lý cấp THCS, đã đặt ra những yêu cầu mới mẻ và thách thức cho cả giáo viên và học sinh. Thay vì chỉ ghi nhớ các sự kiện và số liệu khô khan, người học cần hình thành những năng lực đặc thù như tư duy không gian, tư duy tổng hợp, khả năng phân tích mối quan hệ giữa các yếu tố địa lý, và vận dụng kiến thức vào giải quyết các vấn đề thực tiễn. Điều này đòi hỏi một sự chuyển dịch mạnh mẽ từ phương pháp dạy học truyền thống sang các tiếp cận hiện đại hơn, lấy học sinh làm trung tâm.
+- Cùng với đó, xu hướng chuyển đổi số đang tác động sâu rộng đến mọi lĩnh vực, và giáo dục không nằm ngoài dòng chảy ấy. Việc ứng dụng công nghệ thông tin vào giảng dạy không chỉ là một lựa chọn mà đã trở thành một yếu tố then chốt để xây dựng một hệ sinh thái học tập số linh hoạt, cá nhân hóa và hiệu quả. Đặc biệt trong môn Địa lý, công nghệ có thể trở thành cầu nối giúp học sinh tiếp cận thế giới rộng lớn một cách trực quan, sinh động hơn, từ đó bồi đắp tư duy đa chiều và năng lực giải quyết vấn đề.
+-  Xuất phát từ thực tiễn dạy – học: Tại trường THCS Nguyễn Văn Bánh, điều kiện cơ sở vật chất đã có những cải thiện đáng kể với việc trang bị màn hình tương tác tại các phòng học. Tuy nhiên, thực trạng dạy học môn Địa lý vẫn còn đối mặt với nhiều thách thức. Phương pháp truyền thụ kiến thức một chiều, thầy giảng – trò ghi chép, vẫn chiếm ưu thế trong nhiều tiết học. Điều này vô hình trung khiến môn Địa lý trở nên kém hấp dẫn, đôi khi còn bị học sinh xem là môn phụ, nặng về lý thuyết và dễ gây nhàm chán.
+- Đối với học sinh khối 6 (lớp 6/1, 6/2, 6/3), một lứa tuổi đang trong giai đoạn chuyển giao từ tiểu học lên THCS, các em thường có sự hiếu động tự nhiên và khả năng tập trung chưa thực sự bền vững. Qua quan sát thực tế tại lớp, tôi nhận thấy khoảng 68,7% học sinh có xu hướng học thuộc lòng kiến thức mà ít có khả năng vận dụng để giải thích các hiện tượng địa lý, phân tích bản đồ hoặc đưa ra nhận định cá nhân.
+- Hạn chế của phương pháp truyền thống càng bộc lộ rõ khi không gian lớp học chưa thực sự trở thành môi trường để học sinh chủ động khám phá, thảo luận và tương tác. Các em ít có cơ hội rèn luyện kỹ năng đặt câu hỏi, phản biện hay trình bày ý kiến trước tập thể. Trước bối cảnh đó, tôi đã mạnh dạn lựa chọn đề tài: "Vận dụng mô hình lớp học đảo ngược trong môn Địa lý nhằm phát triển tư duy cấp THCS" để nghiên cứu và áp dụng trong năm học 2024-2025.
+3.2.Nội dung giải pháp đề nghị công nhận là sáng kiến:
+    3.2.1. Mục đích của giải pháp: 	
+- Thực trạng chung: Trường THCS Nguyễn Văn Bánh đóng tại Xã Nhuận Phú Tân là một trường vùng nông thôn với điều kiện kinh tế – xã hội còn nhiều khó khăn. Tuy nhiên, nhà trường đã được đầu tư trang bị màn hình tương tác tại các phòng học, kết nối internet, tạo nền tảng thuận lợi để triển khai các phương pháp dạy học hiện đại. Đặc điểm của địa phương – một vùng đồng bằng sông Cửu Long với hệ thống sông ngòi, khí hậu nhiệt đới và các vấn đề môi trường đặc thù – là nguồn tài nguyên thực tiễn phong phú cho môn Địa lý.
+- Thực trạng đối với giáo viên: Qua khảo sát, mức độ quan tâm đến đổi mới phương pháp dạy học và ứng dụng CNTT được ghi nhận như sau:
+Tiêu chí	Rất quan tâm (%)	Quan tâm (%)	Ít quan tâm (%)	Không quan tâm (%)
+Đổi mới PPDH	45,7	32,1	15,6	6,6
+Ứng dụng CNTT	38,2	41,5	18,3	2,0
+- Thực trạng đối với học sinh: Kết quả học tập môn Địa lý của học sinh lớp 6 trước khi áp dụng sáng kiến:
+Lớp	Sĩ số	Giỏi (%)	Khá (%)	Trung bình (%)	Yếu (%)
+6/1	38	15,8	31,6	44,7	7,9
+6/2	39	12,8	35,9	46,2	5,1
+6/3	40	17,5	30,0	45,0	7,5
+
+- Qua phân tích, nguyên nhân chính xuất phát từ phương pháp giảng dạy chưa kích thích tư duy, học sinh chưa có thói quen tự học chủ động. Chính những hạn chế này là động lực trực tiếp để tôi tìm kiếm và áp dụng mô hình lớp học đảo ngược.
+3.2.2. Điểm mới trong nghiên cứu
+- Mô hình lớp học đảo ngược (Flipped Classroom) là hình thức tổ chức dạy học trong đó hoạt động tiếp nhận kiến thức lý thuyết được chuyển sang cho học sinh thực hiện ở nhà (qua video bài giảng, tài liệu đọc, infographic...), còn thời gian trên lớp được dành cho các hoạt động thực hành, thảo luận, vận dụng và giải quyết vấn đề dưới sự hướng dẫn của giáo viên.
+- Tư duy địa lý là tập hợp các năng lực tư duy đặc thù của môn Địa lý, bao gồm: tư duy không gian (đọc và phân tích bản đồ), tư duy tổng hợp (liên kết các yếu tố địa lý để đưa ra nhận định tổng thể), tư duy hệ thống (nhận thức mối quan hệ nhân quả giữa các hiện tượng), và tư duy phê phán (đặt câu hỏi, phân tích, đánh giá thông tin khách quan).
+3.2.3. Nội dung giải pháp:
+- Lý thuyết kiến tạo (Piaget & Vygotsky): Học sinh không phải những chiếc bình rỗng để đổ kiến thức vào, mà là những chủ thể tích cực tự xây dựng kiến thức qua tương tác. Mô hình lớp học đảo ngược tạo điều kiện để học sinh tự tiếp cận kiến thức ở nhà, sau đó xây dựng và khám phá sâu hơn qua các hoạt động trên lớp.
+Lý thuyết học tập qua trải nghiệm (Kolb): Chu trình học tập gồm 4 giai đoạn: trải nghiệm → quan sát, phản tư → khái quát hóa → vận dụng. Mô hình lớp học đảo ngược tương ứng hoàn toàn với chu trình này.
+- Dạy học phát triển năng lực: Định hướng phát triển năng lực giải quyết vấn đề, năng lực tự học, năng lực hợp tác là những trụ cột chính của mô hình này, phù hợp hoàn toàn với yêu cầu của Chương trình GDPT 2018.
+3.3. Các biện pháp thực hiện
+GIẢI PHÁP 1: Tối ưu hóa hệ sinh thái học liệu số tiền bài để kích hoạt tư duy khám phá; Đây là bước nền tảng của toàn bộ mô hình. Trước mỗi tiết học, thay vì để học sinh đến lớp với kiến thức trống rỗng, tôi thiết kế và gửi đến các em một hệ sinh thái học liệu số đa dạng, bao gồm: video bài giảng ngắn (5-7 phút), infographic tóm tắt kiến thức, và bài kiểm tra trắc nghiệm nhanh để kích hoạt tư duy trước khi lên lớp.
+Công cụ và nền tảng được sử dụng:
+- Google Classroom: Nền tảng chính để giao nhiệm vụ, chia sẻ video và tài liệu học tập. Tính năng "Giao nhiệm vụ có hạn chót" giúp tôi theo dõi tỷ lệ hoàn thành của từng học sinh một cách chính xác.
+- Edpuzzle: Cho phép nhúng câu hỏi trực tiếp vào video. Tôi thường đặt 3-4 câu hỏi cho một video 6-7 phút, đảm bảo học sinh xem video một cách chủ động, tỉnh táo.
+- Canva: Thiết kế infographic hấp dẫn, màu sắc bắt mắt, giúp thông tin trở nên trực quan và dễ ghi nhớ hơn.
+- Google Form & Quizizz: Tạo bài kiểm tra trắc nghiệm nhanh, tự động chấm điểm và phản hồi ngay cho học sinh.
+Quy trình thực hiện:
+- Bước 1: Phân tích nội dung bài học để xác định kiến thức cốt lõi cần chuyển giao.
+- Bước 2: Thiết kế video bài giảng ngắn gọn (5-7 phút) và phiếu học tập định hướng.
+- Bước 3: Tích hợp câu hỏi tương tác vào học liệu qua Edpuzzle/Google Form.
+- Bước 4: Giao nhiệm vụ tiền bài qua Google Classroom/Zalo nhóm lớp, đặt hạn nộp rõ ràng.
+- Bước 5: Thu thập phản hồi, xác định những điểm học sinh còn lúng túng để điều chỉnh tiết dạy.
+Ví dụ minh họa – Bài "Đặc điểm khí hậu Việt Nam": Tôi thiết kế video 6 phút giới thiệu khái niệm khí hậu nhiệt đới ẩm gió mùa. Video được nhúng trên Edpuzzle với 3 câu hỏi: (1) "Khí hậu Việt Nam thuộc loại nào?", (2) "Tại sao miền Bắc lạnh hơn miền Nam?", (3) "Ở địa phương em, khí hậu thế nào?". Học sinh phải xem và trả lời trước 18h ngày hôm sau. Sau đó tôi tải kết quả, xem học sinh nào chưa làm hoặc hiểu sai, và liên hệ hỗ trợ riêng qua Zalo.
+GIẢI PHÁP 2: Kiến tạo không gian học tập tương tác trên lớp thông qua chuỗi hoạt động Địa lý thực tiễn: Đây là bước chuyển hoá kiến thức đã chuẩn bị ở nhà thành tư duy sâu sắc và kỹ năng thực tế. Không gian lớp học theo mô hình này trở thành một "phòng thí nghiệm địa lý" sôi động, nơi học sinh là những nhà nghiên cứu nhỏ, tích cực tìm tòi, thảo luận và học hỏi từ nhau.
+Quy trình một tiết học đảo ngược (45 phút):
+- Giai đoạn 1 – Khởi động (5 phút): Bắt đầu bằng một tình huống thực tế gắn với địa phương Xã Nhuận Phú Tân. Ví dụ, khi dạy bài khí hậu Việt Nam, tôi chiếu hình ảnh bão, lũ lụt tại Trà Vinh và đặt câu hỏi: "Vì sao vùng ta mỗi năm lại gặp bão lũ?". Bước này kích thích sự tò mò và liên kết với kiến thức đã học ở nhà.
+- Giai đoạn 2 – Hoạt động nhóm (20-25 phút): Chia lớp thành 5 nhóm (4-5 học sinh/nhóm). Nhóm 1 & 2 phân tích biểu đồ nhiệt độ – lượng mưa; nhóm 3 & 4 so sánh khí hậu Bắc – Nam; nhóm 5 phân tích bản đồ khí hậu theo độ cao. Mỗi nhóm có phiếu nhiệm vụ cụ thể. Giáo viên đi xung quanh hỗ trợ và ghi chú các ý chính.
+ Giai đoạn 3 – Trình bày và phản biện (15 phút): Mỗi nhóm cử đại diện trình bày 2-3 phút. Các nhóm còn lại đặt câu hỏi phản biện. Tôi sử dụng Padlet để các nhóm đăng kết quả lên "tường ảo" chung, tạo cảm giác như đang trưng bày một triển lãm địa lý nhỏ.
+ Giai đoạn 4 – Tổng kết và mở rộng (5 phút): Giáo viên tổng hợp, chốt kiến thức trọng tâm và đặt câu hỏi mở kích thích tư duy: "Nếu biến đổi khí hậu tiếp tục, Trà Vinh sẽ ra sao?".
+- Sau tiết học: Giao bài tập vận dụng thực tế: phỏng vấn người thân về cách thích nghi với khí hậu địa phương, hoặc so sánh khí hậu Trà Vinh với một địa phương khác ở Việt Nam. Học sinh khá, giỏi được giao nhiệm vụ chuyên sâu hơn.
+GIẢI PHÁP 3: Đổi mới quy trình đánh giá đa chiều nhằm định hướng và phát triển năng lực tư duy địa lý bền vững: Đánh giá không chỉ là công cụ để xét điểm mà còn là thước đo để thầy và trò nhìn lại quá trình học tập, từ đó điều chỉnh và cải thiện. Trong mô hình lớp học đảo ngược, tôi kết hợp đánh giá theo ba thời điểm: trước, trong và sau giờ học.
+Quy trình thực hiện:
+- Bước 1: Đánh giá mức độ chuẩn bị bài ở nhà thông qua kết quả bài kiểm tra nhanh trên Google Form/Quizizz.
+- Bước 2: Đánh giá quá trình tham gia thảo luận nhóm, kỹ năng hợp tác và trình bày trên lớp (dùng phiếu quan sát).
+- Bước 3: Đánh giá sản phẩm học tập (sơ đồ tư duy, bài thuyết trình, bản đồ chú giải) bằng rubric rõ ràng.
+- Bước 4: Tổ chức đánh giá định kỳ sau mỗi chủ đề với các dạng bài tập phát triển tư duy.
+- Bước 5: Cung cấp phản hồi cá nhân hóa, hướng dẫn học sinh tự điều chỉnh.
+Ba giải pháp có mối quan hệ hữu cơ: Giải pháp 1 tạo nền tảng kiến thức và kỹ năng tự học. Giải pháp 2 phát triển tư duy thông qua tương tác trực tiếp. Giải pháp 3 kiểm chứng, định hướng và thúc đẩy sự phát triển tư duy bền vững.
+*  Những thách thức thực tế và cách khắc phục
+- Thách thức 1 – Không phải tất cả học sinh đều có internet ở nhà: Tôi cho phép học sinh làm bài tiền bài tại phòng tin học vào các buổi chiều sau giờ học. Đồng thời tạo một "nhóm tiên phong" gồm 5-6 em có điều kiện hoàn thành bài đầu tiên, sau đó tôi tóm tắt và chia sẻ lại cho cả lớp.
+- Thách thức 2 – Một số em chưa có kỹ năng tự học: Tôi tạo "phiếu hướng dẫn xem video" rõ ràng, yêu cầu học sinh ghi chú 5 từ khóa hoặc vẽ bản đồ tư duy nhỏ sau khi xem. Điều này buộc các em phải chủ động xử lý thông tin, không chỉ nghe một cách thụ động.
+- Thách thức 3 – Phụ huynh lo lắng con em bị quá tải: Tôi tổ chức họp phụ huynh để giải thích mô hình, cho họ thấy kết quả học tập cải thiện và nghe chia sẻ trực tiếp từ con em. Hầu hết phụ huynh đều ủng hộ sau khi được giải thích cặn kẽ.
+3.5. Khả năng áp dụng của giải pháp
+- Điều kiện về cơ sở vật chất: Cần có thiết bị kết nối internet, máy tính và màn hình tương tác tại phòng học. Phòng tin học cần mở cửa thêm giờ để học sinh yếu thế có thể tiếp cận học liệu số.
+- Điều kiện về năng lực giáo viên: Giáo viên cần được tập huấn về mô hình lớp học đảo ngược, kỹ năng thiết kế video bài giảng ngắn, sử dụng Google Classroom, Edpuzzle và các công cụ đánh giá trực tuyến. Kỹ năng này không đòi hỏi quá cao, chỉ cần 3-4 giờ học tập là có thể bắt đầu thực hành.
+- Điều kiện về đối tượng học sinh: Học sinh cần có khả năng tự học cơ bản và sự hỗ trợ từ gia đình trong việc truy cập học liệu.
+- Khả năng áp dụng tại các trường khác: Sáng kiến có tính linh hoạt cao, có thể điều chỉnh để phù hợp với các trường THCS trong khu vực lân cận. Các bộ môn như Ngữ văn, Lịch sử, Khoa học tự nhiên cũng hoàn toàn có thể áp dụng mô hình tương tự.
+ 3.6.  Hiệu quả, lợi ích thu được hoặc dự kiến có thể thu được do áp dụng giải pháp
+3.6.1. Kết quả định lượng
+Bảng so sánh kết quả học tập môn Địa lý của học sinh lớp 6 trước và sau khi áp dụng sáng kiến năm học 2024-2025:
+Tiêu chí	Trước áp dụng (%)	Sau áp dụng (%)	Mức tăng/giảm (%)
+Giỏi	15,3	38,7	+23,4
+Khá	32,5	45,2	+12,7
+Trung bình	45,3	15,1	-30,2
+Yếu	6,9	1,0	-5,9
+
+Số liệu trên cho thấy tỷ lệ học sinh đạt loại Giỏi tăng từ 15,3% lên 38,7% (tăng 23,4 điểm phần trăm); tỷ lệ Khá tăng từ 32,5% lên 45,2%. Tỷ lệ Trung bình giảm mạnh từ 45,3% xuống còn 15,1%, và tỷ lệ Yếu giảm từ 6,9% xuống chỉ còn 1,0%.
+3.6.2 Kết quả định tính
+- Về thái độ học tập: Học sinh hứng thú hơn rõ rệt, tích cực tham gia phát biểu, ít có tình trạng ngủ gật hoặc mất tập trung. Nhiều em còn chủ động hỏi thêm về các vấn đề địa lý thực tế của địa phương.
+- Về kỹ năng tư duy: Học sinh không chỉ biết "cái gì" mà còn biết "tại sao" và "làm thế nào". Khi được hỏi "Tại sao?", các em không ngập ngừ mà nhanh chóng đưa ra lý giải. Khả năng phân tích bản đồ, đọc biểu đồ và liên hệ thực tiễn được cải thiện đáng kể.
+- Về kỹ năng hợp tác: Học sinh học cách làm việc trong nhóm, lắng nghe ý kiến của bạn, thảo luận và giải quyết bất đồng một cách lành mạnh. Kỹ năng thuyết trình và phản biện của các em tiến bộ rõ rệt qua các tiết học.
+- Từ phía đồng nghiệp và phụ huynh: Nhiều giáo viên trong trường đánh giá cao mô hình sau khi dự giờ. Phụ huynh phản ánh con em về nhà chủ động xem video, chuẩn bị bài và tích cực chia sẻ những điều đã học.
+- Qua quá trình nghiên cứu và triển khai sáng kiến tại trường THCS Nguyễn Văn Bánh, mô hình lớp học đảo ngược đã mang lại những thay đổi tích cực và bền vững. Kết quả học tập của học sinh ba lớp 6/1, 6/2, 6/3 cải thiện rõ rệt, tỷ lệ khá giỏi tăng từ 47,8% lên 83,9%. Quan trọng hơn, học sinh không chỉ biết kiến thức mà còn biết vận dụng, biết tư duy, biết đặt câu hỏi – đây chính là mục tiêu cốt lõi của nền giáo dục hiện đại.
+- Điểm mới và sáng tạo của sáng kiến này là: chuyển giao kiến thức lý thuyết sang môi trường số trước giờ học; dành toàn bộ thời gian trên lớp cho hoạt động tương tác và phát triển tư duy; và xây dựng quy trình đánh giá đa chiều, cá nhân hóa. Ba giải pháp kết hợp tạo thành một hệ sinh thái học tập toàn diện, giúp học sinh phát triển cả kiến thức lẫn kỹ năng.
+- Tuy nhiên, sáng kiến cũng còn những hạn chế nhất định: đòi hỏi giáo viên đầu tư nhiều thời gian chuẩn bị ban đầu; một bộ phận nhỏ học sinh chưa có điều kiện tiếp cận internet tại nhà; và cần thêm thời gian để phụ huynh và học sinh quen với mô hình học tập mới. Đây là những hướng cần tiếp tục cải thiện trong các năm học tiếp theo.
+3.7. Tài liệu kèm theo gồm:  
+1.	Bộ Giáo dục và Đào tạo (2018), Thông tư 32/2018/TT-BGDĐT ban hành Chương trình Giáo dục phổ thông. Hà Nội.
+2.	Bộ Giáo dục và Đào tạo (2023), Công văn số 5555/BGDĐT-GDTrH về việc hướng dẫn thực hiện nhiệm vụ giáo dục trung học năm học 2023-2024.
+3.	Kolb, D. A. (1984), Experiential Learning, Prentice-Hall, Englewood Cliffs, NJ.
+4.	Luật Giáo dục 2019 (Luật số 43/2019/QH14), Quốc hội nước Cộng hòa XHCN Việt Nam.
+5.	Nguyễn Thị Phương Hoa (2018), "Dạy học theo mô hình lớp học đảo ngược", Tạp chí Giáo dục, số 437, tr. 25-28.
+6.	Nguyễn Thị Thu Hà (2021), Phát triển năng lực tự học cho học sinh THCS thông qua ứng dụng CNTT, Luận văn Thạc sĩ, Trường ĐHSP Hà Nội.
+7.	Phạm Quang Vinh (2019), Phát triển tư duy địa lý cho học sinh THPT, NXB Đại học Sư phạm, Hà Nội.
+8.	Trần Thị Thanh Thủy (2022), "Ứng dụng mô hình lớp học đảo ngược trong dạy học Địa lý ở trường THCS", Tạp chí Khoa học Giáo dục, số 187, tr. 12-16.
+9.	Vygotsky, L. S. (1978), Mind in Society, Harvard University Press, Cambridge, MA.
+10.	Website Bộ GD&ĐT (moet.gov.vn), Các văn bản chỉ đạo về chuyển đổi số trong giáo dục năm 2024.
+
+
+
+                                                    Nhuận Phú Tân, ngày 31tháng 03 năm 2026
+
+
+
+
+
