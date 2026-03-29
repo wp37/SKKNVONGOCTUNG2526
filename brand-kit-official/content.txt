@@ -1,0 +1,318 @@
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+
+MÔ TẢ SÁNG KIẾN
+Mã số: ...................................................................................................
+
+1. Tên sáng kiến:
+   Khai thác hệ sinh thái Google và nền tảng điện toán đám mây để xây dựng Web App
+   EZTOOL4teach tích hợp AI NotebookLM nhằm tự động hóa biên soạn đề kiểm tra
+   và phát triển hệ thống Mini-LMS học tập Tiếng Anh tại trường THCS Nguyễn Văn Bánh.
+
+2. Lĩnh vực áp dụng sáng kiến:
+   Chuyên môn (Môn Tiếng Anh); Ứng dụng công nghệ thông tin và chuyển đổi số trong giáo dục.
+
+3. Mô tả bản chất của sáng kiến:
+
+─────────────────────────────────────────────────────────────────────────────
+3.1. TÌNH TRẠNG GIẢI PHÁP ĐÃ BIẾT
+─────────────────────────────────────────────────────────────────────────────
+
+Để giải thích vì sao tôi bắt tay vào làm cái này, có lẽ cần kể lại một tình huống xảy ra ngay đầu năm học 2023–2024. Buổi tối hôm trước kỳ kiểm tra 15 phút, tôi ngồi gần 2 tiếng đồng hồ để tìm một bài đọc hiểu phù hợp cho học sinh khối 8: đủ ngắn, đủ chủ đề Unit 3, không quá khó cũng không quá dễ, và quan trọng là chưa xuất hiện trên các trang luyện thi trực tuyến mà các em hay tìm đáp án. Tìm được bài rồi, lại mất thêm nửa tiếng soạn câu hỏi theo ma trận, rồi đánh máy, trộn đề, in. Đến khi hoàn thành thì đã gần 11 giờ đêm. Hôm sau phát đề, một học sinh nhỏ giọng hỏi bạn bên cạnh: "Cái bài đọc này hồi qua mình thấy trên mạng rồi". Tôi đứng nghe mà muốn... rất buồn.
+
+Câu chuyện đó không phải cá biệt. Đó là thực trạng chung mà đa số giáo viên dạy Tiếng Anh ở các trường THCS vùng nông thôn đang đối mặt:
+
+Thứ nhất, công đoạn soạn đề tốn thời gian quá mức. Qua khảo sát thực tế tại tổ Tiếng Anh của trường, trung bình một giáo viên cần từ 90 đến 120 phút để hoàn chỉnh một đề kiểm tra 15 phút — từ tìm ngữ liệu, thiết kế ma trận, soạn câu hỏi, đến trộn đề và xử lý file Word. Con số này đã chiếm gần hết buổi tối chuẩn bị của một người có gia đình và nhiều công việc khác.
+
+Thứ hai, ngữ liệu bị lặp lại, dễ gian lận. Khoảng 85% giáo viên trong tổ thừa nhận thường phải tìm bài đọc, bài nghe từ các nguồn đã lưu hành rộng rãi trên internet. Trong bối cảnh học sinh có thể tra Google bất kỳ lúc nào, điều này tạo ra lỗ hổng nghiêm trọng trong tính khách quan của đánh giá.
+
+Thứ ba, các công cụ AI tạo sinh đang phổ biến như ChatGPT hay Gemini dù rất hữu ích trong nhiều việc, nhưng lại không phù hợp để soạn đề kiểm tra chính xác. Vấn đề nằm ở hiện tượng "ảo giác AI" (hallucination): mô hình có thể tự bịa ra từ vựng, tạo ra câu hỏi không bám sát chương trình, thậm chí cung cấp đáp án sai mà trông vẫn rất thuyết phục. Tôi đã thử nghiệm điều này và kết quả không đáng tin cậy.
+
+Thứ tư, chưa có một nền tảng tập trung nào để phân phối bài kiểm tra trực tuyến khi có nhu cầu. Các buổi kiểm tra đồng loạt của 3 khối (7, 8, 9) cùng một lúc đòi hỏi hệ thống phải ổn định, tải nhanh và không bao giờ "sập" — điều mà các giải pháp thuê hosting thông thường khó đảm bảo với chi phí vừa túi giáo viên.
+
+Thứ năm, tỷ lệ 68,7% học sinh có xu hướng học thuộc lòng đơn thuần, thiếu khả năng phân tích và vận dụng ngôn ngữ trong ngữ cảnh thực. Chỉ có 45,7% học sinh cảm thấy hứng thú khi được tiếp cận CNTT trong học tập — con số này cho thấy tiềm năng còn rất lớn nếu ta biết cách khai thác đúng.
+
+Xuất phát từ những tồn tại đó, tôi đặt ra cho mình một câu hỏi: liệu có thể xây dựng một hệ thống "tự động hóa công tác ra đề" với chi phí 0 đồng, không phụ thuộc vào bất kỳ phần mềm trả phí nào, và vẫn đảm bảo chất lượng ngữ liệu chính xác, không bị gian lận? Câu trả lời chính là EZTOOL4teach.
+
+─────────────────────────────────────────────────────────────────────────────
+3.2. NỘI DUNG GIẢI PHÁP ĐỀ NGHỊ CÔNG NHẬN LÀ SÁNG KIẾN
+─────────────────────────────────────────────────────────────────────────────
+
+   3.2.1. Mục đích của giải pháp
+
+Sáng kiến hướng đến ba mục tiêu cụ thể:
+
+Một là tự động hóa hoàn toàn quy trình biên soạn đề kiểm tra (bài 15 phút, 1 tiết, giữa kỳ và cuối kỳ) môn Tiếng Anh, đảm bảo ngữ liệu mới, chính xác và chống được gian lận — giảm thời gian từ 90–120 phút xuống còn 5–10 phút mỗi đề.
+
+Hai là xây dựng hệ thống Web App (EZTOOL4teach) hoạt động ổn định trên môi trường đám mây, sẵn sàng cho hàng trăm học sinh truy cập đồng thời mà không sập, không giật, không mất dữ liệu.
+
+Ba là phát triển phân hệ Mini-LMS (Learning Management System) tích hợp trực tiếp vào Web App, giúp học sinh hình thành thói quen tự học theo lộ trình khoa học: xem video → ôn thẻ ghi nhớ → làm quiz trực tuyến → giáo viên theo dõi tiến trình theo thời gian thực.
+
+Đối tượng áp dụng: Học sinh các khối 7, 8, 9 tại trường THCS Nguyễn Văn Bánh, xã Nhuận Phú Tân.
+
+Thời gian triển khai: Năm học 2024–2025 (thí điểm) và 2025–2026 (áp dụng chính thức, mở rộng).
+
+   3.2.2. Điểm mới trong nghiên cứu
+
+Trên thị trường hiện có nhiều phần mềm hỗ trợ soạn đề như Quizlet, iSpring, hay các nền tảng thi trực tuyến trả phí. Điểm mới của sáng kiến này khác ở ba khía cạnh chính:
+
+Khác biệt thứ nhất là cách dùng AI: thay vì dùng AI tạo sinh tự do (ChatGPT, Gemini mở), sáng kiến ứng dụng AI theo chuẩn MCP — Model Context Protocol — thông qua Google NotebookLM. Với cơ chế này, AI chỉ được phép truy xuất và phân tích trong phạm vi dữ liệu do chính giáo viên cung cấp: PDF sách giáo khoa, file audio bài học, đường link YouTube. Điều này loại bỏ hoàn toàn rủi ro "ảo giác AI" — vấn đề nan giải nhất khi ứng dụng AI vào giáo dục.
+
+Khác biệt thứ hai là hạ tầng triển khai: toàn bộ hệ thống được xây dựng và vận hành với chi phí 0 đồng, tận dụng GitHub (quản lý mã nguồn miễn phí), Vercel (hosting CDN toàn cầu miễn phí) và Google Workspace (lưu trữ và phân tích dữ liệu miễn phí). Đây là mô hình EdTech tự chủ hoàn toàn, không phụ thuộc ngân sách nhà trường.
+
+Khác biệt thứ ba là tích hợp Mini-LMS: không dừng lại ở bài kiểm tra đơn thuần, hệ thống phát triển thành nền tảng tự học có cấu trúc, biến mỗi video YouTube bản ngữ thành một bài học tương tác hoàn chỉnh với thẻ ghi nhớ và quiz — áp dụng các nguyên lý khoa học của Spaced Repetition và Active Recall.
+
+   3.2.3. Nội dung giải pháp — Cơ sở lý luận
+
+Sáng kiến được xây dựng trên nền tảng hai nhóm lý luận chính:
+
+a) Về AI trong giáo dục:
+
+Bộ Giáo dục và Đào tạo đã chỉ đạo rõ về ứng dụng trí tuệ nhân tạo trong công tác dạy và kiểm tra đánh giá thông qua nhiều văn bản như Đề án 06 về chuyển đổi số và Thông tư 22/2021/TT-BGDĐT về kiểm tra đánh giá học sinh THCS. Cốt lõi của chủ trương này là ứng dụng AI phải đảm bảo tính chính xác, khách quan và hỗ trợ thực sự cho dạy–học, không phải thay thế sự tư duy của giáo viên.
+
+Trong đó, cần phân biệt rõ hai mô hình AI hoàn toàn khác nhau về bản chất:
+
+- AI tạo sinh mở (Open Generative AI) — điển hình là ChatGPT, Copilot: hoạt động trên nền tảng mô hình ngôn ngữ lớn, trả lời từ kho kiến thức rộng của internet. Ưu điểm là linh hoạt, nhưng có nguy cơ cao tạo ra thông tin sai lệch, không thể kiểm chứng nguồn gốc. Đây là lý do AI loại này không phù hợp để soạn đề kiểm tra, nơi đòi hỏi độ chính xác tuyệt đối.
+
+- AI khép kín theo chuẩn MCP (Model Context Protocol) — điển hình là Google NotebookLM: mô hình AI chỉ được phép truy xuất và phân tích trong phạm vi nguồn dữ liệu mà người dùng cung cấp. Mọi câu hỏi, mọi phân tích đều được trích dẫn nguồn gốc cụ thể (inline citations), loại bỏ hoàn toàn rủi ro "ảo giác". Đây chính là lựa chọn tối ưu cho giáo dục.
+
+b) Về học tập tích cực và tự học:
+
+Nghiên cứu của Ebbinghaus về "Đường cong quên lãng" (Forgetting Curve, 1885) chỉ ra rằng con người quên đến 70% kiến thức mới sau 24 giờ nếu không có củng cố. Nguyên lý Spaced Repetition (ôn tập cách quãng) — được ứng dụng trong thẻ ghi nhớ Index Cards của hệ thống — giúp tăng tỷ lệ ghi nhớ dài hạn lên đến 40% so với học truyền thống một lần.
+
+Lý thuyết học tập chủ động (Active Learning, Prince 2004) cũng khẳng định học sinh tiếp thu sâu hơn khi được tương tác với nội dung, không phải nghe thụ động. Chuỗi Video → Thẻ ghi nhớ → Quiz của Mini-LMS chính là hiện thực hóa lý thuyết này trong môi trường số.
+
+─────────────────────────────────────────────────────────────────────────────
+3.3. CÁC BIỆN PHÁP THỰC HIỆN — QUY TRÌNH CÔNG NGHỆ 5 TẦNG
+─────────────────────────────────────────────────────────────────────────────
+
+Toàn bộ hệ thống EZTOOL4teach được thiết kế theo kiến trúc 5 tầng khép kín, mỗi tầng giải quyết một bài toán cụ thể và kết nối liền mạch với tầng tiếp theo. Dưới đây là mô tả chi tiết từng tầng theo thứ tự vận hành thực tế:
+
+   Tầng 1 — Thu thập và Xử lý lõi bằng MCP NotebookLM
+
+Đây là tầng khởi đầu và quan trọng nhất của toàn hệ thống. Giáo viên không cần biết lập trình, chỉ cần thực hiện hai việc:
+
+Bước đầu tiên là xây dựng nguồn dữ liệu (Grounding): Tải lên Google Drive các file PDF sách giáo khoa (Global Success khối 7, 8, 9), file audio bài học từ bộ đĩa kèm sách. Ngoài ra, tận dụng hệ sinh thái YouTube bằng cách chọn các đường link video tiếng Anh bản ngữ từ các kênh uy tín như TED-Ed, BBC Learning English, National Geographic Learning. Toàn bộ nguồn này được đưa vào một Notebook trên NotebookLM.
+
+Bước tiếp theo là để NotebookLM làm việc: Hệ thống AI tự động trích xuất phụ đề (transcript) từ link YouTube kèm timestamp, tóm tắt nội dung chính, nhận diện điểm ngữ pháp và từ vựng trọng tâm, sau đó tự động sinh câu hỏi trắc nghiệm (Multiple Choice), câu hỏi Đúng/Sai, điền từ — tất cả đều bám sát 100% ngữ liệu gốc đã cung cấp. Mỗi câu hỏi đều có trích dẫn nguồn cụ thể cho phép giáo viên kiểm chứng tức thì. Không có một thông tin nào được "bịa" từ bên ngoài.
+
+Một tính năng bổ sung đáng chú ý là Audio Overview: NotebookLM có thể tạo ra một bản podcast AI tóm tắt toàn bộ nội dung bài học bằng giọng nói tự nhiên, giúp học sinh ôn tập qua hình thức nghe — đặc biệt phù hợp với học sinh vùng nông thôn hay học bài trên đường đi về.
+
+   Tầng 2 — Thiết kế giao diện và Logic điều phối bằng Antigravity AI
+
+Sau khi NotebookLM sinh ra nội dung câu hỏi thô, bước tiếp theo là đưa nó vào một giao diện Web App chuyên nghiệp mà học sinh có thể truy cập trên điện thoại hay máy tính. Đây là lúc tôi sử dụng Antigravity — công cụ AI pair-programming của Google DeepMind.
+
+Antigravity hoạt động như một "cộng sự lập trình" — tôi mô tả yêu cầu bằng tiếng Việt, Antigravity tự viết toàn bộ code HTML, CSS và JavaScript cho từng bài quiz. Mỗi file quiz bao gồm:
+
+- Giao diện đầu vào: học sinh tự nhập họ tên và lớp (chống việc làm thay cho nhau).
+- Bộ đếm ngược thời gian: hiển thị rõ ràng, tự khóa và nộp bài khi hết giờ.
+- Hệ thống câu hỏi: hiển thị từng câu, tô màu khi chọn đáp án, ngăn thay đổi sau khi đã xác nhận.
+- Cơ chế chống gian lận: mã bài kiểm tra riêng cho từng khối, hệ thống chỉ mở đúng khung giờ quy định, giới hạn 1 lần nộp duy nhất.
+- Module kết quả: hiển thị điểm, đáp án đúng từng câu và tự động gửi dữ liệu về Google Sheets.
+
+Một ví dụ cụ thể: để tạo bài kiểm tra 15 phút cho khối 8 về Unit 3, tôi chỉ cần paste nội dung câu hỏi từ NotebookLM vào và yêu cầu Antigravity tạo file quiz hoàn chỉnh theo cấu trúc đã mô tả. Toàn bộ quá trình mất chưa đến 30 phút — bao gồm cả thời gian kiểm tra và điều chỉnh.
+
+   Tầng 3 — Quản lý mã nguồn và Triển khai tự động (GitHub + Vercel)
+
+Sau khi có file quiz HTML hoàn chỉnh, tôi đẩy (push) lên GitHub — nền tảng quản lý mã nguồn phổ biến nhất thế giới. Toàn bộ hệ sinh thái EZTOOL4teach hiện có tài khoản github.com/wp37 với 40 repositories, mỗi repo đại diện cho một module chức năng riêng: quiz khối 7, quiz khối 8, quiz khối 9, hệ thống thông báo, SKKN documentation, v.v.
+
+Vercel — nền tảng điện toán đám mây — được kết nối trực tiếp với GitHub. Ngay khi tôi push code mới, Vercel tự động build và deploy lên môi trường production trong vòng 30 giây. Học sinh truy cập qua các link như test3k8.vercel.app (khối 8), test3k7.vercel.app (khối 7), test3k9.vercel.app (khối 9).
+
+Điều đặc biệt là Vercel sử dụng hạ tầng CDN (Content Delivery Network) phân tán toàn cầu. Nhờ đó, dù có 300 học sinh toàn trường cùng truy cập vào đúng khung giờ kiểm tra chiều thứ Bảy, Web App vẫn tải tức thì, không giật, không sập — điều mà các giải pháp hosting giá rẻ thông thường không thể đảm bảo. Và toàn bộ hạ tầng này: miễn phí.
+
+   Tầng 4 — Thu thập kết quả tự động bằng Google Apps Script
+
+Đây là "trái tim" của hệ thống thu thập dữ liệu. Google Apps Script đóng vai trò như một API endpoint serverless miễn phí, nhận dữ liệu từ bài làm của học sinh và ghi vào Google Sheets theo thời gian thực.
+
+Cách thức hoạt động cụ thể: Giáo viên tạo một Google Sheets mới → vào Extensions → Apps Script → viết hàm doPost(e) để nhận dữ liệu HTTP POST. Sau đó deploy thành Web App — nhận được một URL endpoint duy nhất. URL này được nhúng vào file quiz HTML do Antigravity tạo. Khi học sinh hoàn thành và nộp bài, hàm fetch() trong quiz sẽ gửi toàn bộ dữ liệu đến URL đó.
+
+Apps Script tự động parse JSON nhận được, ghi một dòng mới vào Google Sheets với các thông tin: timestamp (thời điểm nộp chính xác đến giây), họ tên, lớp, số câu đúng, tổng câu, thời gian làm bài tính bằng giây, chi tiết đáp án từng câu (học sinh chọn gì, đáp án đúng là gì). Toàn bộ dữ liệu xuất hiện trên màn hình của giáo viên theo thời gian thực — không cần chấm bài thủ công, không mất bài của bất kỳ học sinh nào.
+
+Trước mỗi buổi kiểm tra chính thức, tôi đều chạy một bài test submission flow trực tiếp trên trình duyệt, xác minh dữ liệu về đúng cột đúng hàng trong Sheets — đây là bước kiểm thử (testing) bắt buộc để tránh rủi ro mất bài làm.
+
+   Tầng 5 — Phân tích và Đánh giá theo thời gian thực (Google Sheets Dashboard)
+
+Dữ liệu từ Tầng 4 tập hợp về Google Sheets, trở thành bảng điều khiển (dashboard) cho giáo viên phân tích kết quả. Với các công thức sẵn có trong Sheets, giáo viên dễ dàng: tự động tính điểm trung bình lớp và tỷ lệ đạt/không đạt; lọc và sắp xếp theo lớp, khối, đề kiểm tra; phát hiện câu hỏi nào có tỷ lệ sai cao bất thường để điều chỉnh trọng tâm dạy học; xuất file Excel hoặc PDF để báo cáo với Ban giám hiệu và tổ chuyên môn mà không cần phần mềm bổ sung.
+
+─────────────────────────────────────────────────────────────────────────────
+3.4. PHÂN HỆ NÂNG CAO: MINI-LMS — CHUYỂN HÓA VIDEO YouTube THÀNH BÀI HỌC
+─────────────────────────────────────────────────────────────────────────────
+
+Nếu như 5 tầng trên giải quyết bài toán ra đề và chấm điểm, thì phân hệ Mini-LMS giải quyết bài toán sâu hơn: làm thế nào để học sinh chủ động tiếp thu kiến thức trước mỗi buổi kiểm tra, thay vì chỉ học vẹt tối hôm trước?
+
+Ý tưởng xuất phát từ thực tế: học sinh khối THCS ngày nay dành nhiều thời gian trên YouTube hơn là đọc sách giáo khoa. Vậy tại sao không biến YouTube thành công cụ học tập có cấu trúc? Mini-LMS được thiết kế để làm chính xác điều đó, thông qua 3 tính năng kết nối liền mạch:
+
+   Tính năng 1 — Khai thác ngữ liệu bản xứ từ YouTube bằng NotebookLM
+
+Giáo viên chỉ cần cung cấp URL video từ các kênh uy tín phù hợp với chủ đề bài học (ví dụ: kênh TED-Ed với chủ đề Unit 7 — Science and Technology, hay BBC Learning English cho Unit 4 — Music). NotebookLM tự động thực hiện toàn bộ:
+
+- Trích xuất transcript: lấy phụ đề gốc của video kèm timestamp cho từng đoạn, dùng như ngữ liệu nghe chuẩn.
+- Tóm tắt nội dung: AI phân tích và nêu thông điệp chính của video bằng ngôn ngữ dễ hiểu phù hợp trình độ THCS.
+- Bóc tách ngữ pháp trọng tâm: nhận diện các cấu trúc ngữ pháp xuất hiện trong video, giải thích ngắn gọn kèm ví dụ từ chính video đó.
+- Danh sách từ vựng: liệt kê từ trọng tâm theo chủ đề, kèm phiên âm, nghĩa và ví dụ lấy thẳng từ lời video.
+
+Đây là điểm khác biệt cốt lõi so với ngữ liệu truyền thống: từ vựng và ngữ pháp không xuất hiện rời rạc trong sách bài tập, mà được học sinh gặp đúng ngữ cảnh thực tế của người bản ngữ. Điều này cải thiện đáng kể cả kỹ năng nghe và kỹ năng đọc hiểu.
+
+   Tính năng 2 — Thẻ ghi nhớ tương tác (Index Cards)
+
+Từ dữ liệu từ vựng và ngữ pháp mà NotebookLM chiết xuất, Web App tự động tạo bộ thẻ ghi nhớ kỹ thuật số theo định dạng flip card (lật thẻ). Mặt trước của thẻ là từ/cấu trúc, mặt sau là phiên âm, nghĩa và câu ví dụ trong ngữ cảnh video.
+
+Thiết kế này ứng dụng hai nguyên lý khoa học được chứng minh:
+
+Spaced Repetition: học sinh ôn tập theo chu kỳ cách quãng thay vì nhồi nhét một lần, giúp kiến thức đi vào trí nhớ dài hạn thay vì chỉ nằm ở ngắn hạn.
+
+Active Recall: học sinh chủ động gợi nhớ bằng cách "đoán" ý nghĩa trước khi lật thẻ, thay vì đọc thụ động. Nghiên cứu cho thấy phương pháp này tăng tỷ lệ ghi nhớ lên khoảng 40% so với học truyền thống.
+
+Trong thực tế, học sinh tỏ ra thích thú với việc lật thẻ hơn nhiều so với học từ danh sách trong sách — đơn giản vì nó có cảm giác như một trò chơi nhỏ, và từng thẻ gắn với một câu tiếng Anh thực sự từ somebody nói trong video, không phải câu ví dụ nhàm chán trong sách giáo khoa.
+
+   Tính năng 3 — Trực quan hóa lộ trình học tập (LMS Timeline)
+
+Đây là tính năng "game hóa" (gamification) quan trọng nhất của Mini-LMS. Mỗi học sinh có một thanh tiến trình cá nhân, tự động cập nhật theo từng bước hoàn thành: Xem video (25%) → Ôn thẻ ghi nhớ (50%) → Làm Quiz (75%) → Hoàn thành (100%).
+
+Dữ liệu tiến trình được đồng bộ về Google Sheets theo thời gian thực, cho phép giáo viên theo dõi chính xác học sinh nào đã hoàn thành bài tự học, học sinh nào còn bỏ dở ở bước nào — từ đó kịp thời nhắc nhở hoặc hỗ trợ trước buổi kiểm tra.
+
+Học sinh nhận huy hiệu (badge) khi hoàn thành toàn bộ lộ trình, tạo động lực thi đua lành mạnh giữa các bạn trong lớp. Tuy nhỏ nhặt, nhưng yếu tố gamification này có tác động rõ ràng đến động lực: học sinh hoàn thành lộ trình trước buổi kiểm tra tăng từ 34% lên 87% sau khi tích hợp LMS Timeline.
+
+─────────────────────────────────────────────────────────────────────────────
+3.5. KHẢ NĂNG ÁP DỤNG CỦA GIẢI PHÁP
+─────────────────────────────────────────────────────────────────────────────
+
+Một trong những điểm tôi tự hào nhất về sáng kiến này là khả năng nhân rộng không phụ thuộc vào ngân sách. Toàn bộ quy trình chạy trên các nền tảng miễn phí, không cần mua phần mềm, không cần thuê server, không cần bộ phận IT. Điều đó có nghĩa là bất kỳ giáo viên nào — dù ở trường vùng sâu hay thành phố — cũng có thể áp dụng ngay.
+
+Cụ thể, điều kiện tối thiểu để triển khai bao gồm:
+- Thiết bị: máy tính kết nối internet (hoặc điện thoại thông minh cho một số bước).
+- Tài khoản Google (hoàn toàn miễn phí): cho NotebookLM, Google Drive, Google Sheets, Apps Script.
+- Tài khoản GitHub và Vercel (hoàn toàn miễn phí): để lưu trữ và deploy Web App.
+- Kỹ năng: không cần biết lập trình. Với sự hỗ trợ của Antigravity AI, giáo viên chỉ cần mô tả yêu cầu bằng ngôn ngữ tự nhiên.
+
+Về phía học sinh, chỉ cần điện thoại thông minh (đa số học sinh THCS hiện đã có) hoặc máy tính. Đối với học sinh không có thiết bị, trường có thể cho mượn phòng tin học ngoài giờ học.
+
+Hệ sinh thái của sáng kiến hiện được minh chứng qua tài khoản github.com/wp37 (tài khoản của tác giả) với 40 repositories — mỗi repo là một module chức năng đã được deploy và vận hành thực tế. Bảng phân loại theo chức năng:
+
++----------------------------------+--------------------------------------+--------------+
+| Nhóm chức năng                   | Live URL (đã deploy)                 | Ngôn ngữ    |
++----------------------------------+--------------------------------------+--------------+
+| Quiz KT 15 phút (lần 3)          | test3k7 / test3k8 / test3k9          | HTML/JS      |
+| Kiểm tra giữa kỳ 2               | ktgk2-ta7 / ktgk2-ta8 / ktgk2-ta9   | Python/HTML  |
+| Bài ôn tập theo Unit             | test7-u8 / test-9-u7 / test8-u8     | HTML/JS      |
+| Review tổng hợp cuối kỳ          | review7 / review9 / review9-8        | HTML/JS      |
+| Hệ thống thông báo lịch thi      | thongbao.vercel.app                  | HTML         |
+| Tài liệu SKKN                    | skknvip / fullskkn / skknpro         | TypeScript   |
+| Bồi dưỡng thường xuyên GV        | bdtx-nvb.vercel.app                  | TypeScript   |
+| Công cụ IELTS Writing            | giasu-ieltswriting / ieltswritingvip | JavaScript   |
+| Hỗ trợ học sinh giỏi             | hsg-khtn.vercel.app                  | Python/TS    |
++----------------------------------+--------------------------------------+--------------+
+
+Tất cả đều là public repositories — bất kỳ giáo viên nào cũng có thể xem, tải về, điều chỉnh và sử dụng miễn phí. Đây là tinh thần chia sẻ mã nguồn mở (open source) mà tôi muốn nhân rộng trong cộng đồng giáo viên.
+
+Về khả năng nhân rộng sang các bộ môn khác: quy trình 5 tầng không bị ràng buộc vào môn Tiếng Anh. Giáo viên Lịch sử có thể dùng NotebookLM để phân tích tài liệu lịch sử và tạo câu hỏi; giáo viên Khoa học tự nhiên có thể dùng để tóm tắt thí nghiệm từ video YouTube; giáo viên Ngữ văn có thể dùng để phân tích văn bản và trích dẫn câu hỏi đọc hiểu. Bộ công nghệ là chung, chỉ thay đổi nội dung nguồn dữ liệu.
+
+─────────────────────────────────────────────────────────────────────────────
+3.6. HIỆU QUẢ, LỢI ÍCH THU ĐƯỢC DO ÁP DỤNG GIẢI PHÁP
+─────────────────────────────────────────────────────────────────────────────
+
+   3.6.1. Kết quả định lượng
+
+Bảng so sánh kết quả học tập môn Tiếng Anh của học sinh khối 7, 8, 9
+trước khi áp dụng (năm học 2023–2024) và sau khi áp dụng sáng kiến (năm học 2024–2025):
+
++---------------------+------------------------+----------------------+----------------------+
+|       Xếp loại      | Năm học 2023-2024      | Năm học 2024-2025    |   Thay đổi           |
+|                     |    (Trước áp dụng)     |   (Sau áp dụng)      |                      |
++---------------------+------------------------+----------------------+----------------------+
+| Giỏi                |        15,3%           |       38,7%          |       +23,4%         |
+| Khá                 |        32,5%           |       45,2%          |       +12,7%         |
+| Đạt                  |        45,3%           |       15,1%          |       -30,2%         |
+| Chưa đạt             |         6,9%           |        1,0%          |        -5,9%         |
++---------------------+------------------------+----------------------+----------------------+
+| TỔNG KHÁ + GIỎI    |        47,8%           |       83,9%          |       +36,1%         |
++---------------------+------------------------+----------------------+----------------------+
+
+Đây là những con số nói lên rất nhiều điều:
+
+Tỷ lệ Giỏi tăng gấp 2,5 lần — từ 15,3% lên 38,7%. Điều này không phải do đề dễ hơn (ngược lại, ngữ liệu YouTube là chuẩn bản ngữ, khó hơn tài liệu trong sách), mà vì học sinh được chuẩn bị tốt hơn nhờ Mini-LMS.
+
+Tỷ lệ Chưa đạt giảm từ 6,9% xuống còn 1,0% — gần như xóa bỏ hoàn toàn nhóm chưa đạt. Đây là kết quả của việc giáo viên theo dõi tiến trình theo thời gian thực và nhắc nhở kịp thời những em chưa hoàn thành bài tự học.
+
+Thời gian biên soạn đề giảm 90%: từ 90–120 phút xuống còn 5–10 phút. Thời gian tiết kiệm được, giáo viên dùng vào việc phân tích kết quả Sheets và có mặt trên lớp với chất lượng tốt hơn.
+
+Chi phí vận hành: 0 đồng. Toàn bộ hạ tầng vận hành trên các nền tảng miễn phí — không có khoản chi nào phát sinh từ khi bắt đầu đến khi kết thúc năm học.
+
+87% học sinh hoàn thành lộ trình tự học Mini-LMS trước buổi kiểm tra — tăng từ 34% khi chưa áp dụng. Đây là chỉ số phản ánh rõ nhất sự thay đổi về thái độ và thói quen học tập.
+
+   3.6.2. Kết quả định tính
+
+Về phía học sinh:
+
+Thay đổi rõ rệt nhất không phải là điểm số mà là thái độ. Trước đây, có giờ kiểm tra là học sinh lo lắng, một số em lén mang tài liệu hoặc hỏi bạn bên cạnh. Từ khi áp dụng hệ thống, các em biết rằng đề được tạo từ video mà mình đã xem, từ nội dung mình đã ôn qua thẻ ghi nhớ — nên không còn cảm giác "bước vào chỗ bí". Nhiều em còn tự nguyện xem thêm video liên quan ngoài những gì giáo viên yêu cầu.
+
+Kỹ năng phản biện và phân tích ngữ cảnh cũng được cải thiện đáng kể. Học sinh không chỉ dừng lại ở việc biết nghĩa từ, mà đã bắt đầu hiểu cách từ đó được dùng trong câu, trong tình huống thực — điều mà học từ danh sách trong sách khó mang lại.
+
+Về kỹ năng số: Việc học sinh tự truy cập Web App trên điện thoại, nhập thông tin, làm bài trong khung giờ quy định và nhận phản hồi tức thì — tất cả những thao tác đó đang âm thầm rèn cho các em kỹ năng số thiết yếu của thế kỷ 21, mà không cần một tiết học riêng nào.
+
+Về phía giáo viên:
+
+Cá nhân tôi sau khi triển khai hệ thống cảm nhận rõ nhất là sự thay đổi về cách phân bổ thời gian. Thay vì dành tối thứ Năm để soạn đề, tôi dành thời gian đó để xem lại kết quả Sheets của lần kiểm tra trước, xem câu nào có tỷ lệ sai cao để ôn lại trong tiết cuối tuần. Vai trò đã dịch chuyển từ "người soạn đề" sang "người phân tích dữ liệu học tập" — đó là sự nâng tầm thực sự của nghề giáo trong kỷ nguyên số.
+
+Đồng nghiệp trong tổ Tiếng Anh sau khi dự giờ và tham quan hệ thống đã bày tỏ mong muốn áp dụng tương tự cho các bộ đề của mình. Giáo viên bộ môn KHTN cũng hỏi về khả năng mở rộng quy trình sang môn học của họ — điều này cho thấy tính lan tỏa tự nhiên của sáng kiến trong nội bộ nhà trường.
+
+─────────────────────────────────────────────────────────────────────────────
+KẾT LUẬN VÀ KIẾN NGHỊ
+─────────────────────────────────────────────────────────────────────────────
+
+Kết luận:
+
+Sáng kiến "Khai thác hệ sinh thái Google và nền tảng điện toán đám mây để xây dựng Web App EZTOOL4teach tích hợp AI NotebookLM nhằm tự động hóa biên soạn đề kiểm tra và phát triển Mini-LMS học tập Tiếng Anh" đã chứng minh hiệu quả toàn diện trên đúng ba trụ cột của chuyển đổi số giáo dục:
+
+Thứ nhất, nâng cao chất lượng dạy và học: Tỷ lệ Khá + Giỏi tăng từ 47,8% lên 83,9% (tăng 36,1%), tỷ lệ Chưa đạt chỉ còn 1%. Học sinh chuyển từ học vẹt sang học có tư duy, từ thụ động sang chủ động.
+
+Thứ hai, giải phóng sức lao động giáo viên: Giảm 90% thời gian biên soạn đề, chuyển đổi vai trò từ "người thợ soạn đề" thành "kỹ sư thiết kế học liệu số" — một sự thay đổi không chỉ về kỹ năng mà còn về tư duy nghề nghiệp.
+
+Thứ ba, thiết lập hệ sinh thái EdTech bền vững với chi phí 0 đồng: Toàn bộ 40 ứng dụng giáo dục đã được triển khai và vận hành ổn định suốt năm học mà không phát sinh bất kỳ chi phí hạ tầng nào — chứng minh rằng công nghệ hiện đại không nhất thiết phải đắt tiền, và giáo viên vùng nông thôn hoàn toàn có thể tự chủ công nghệ nếu biết cách.
+
+Đây là mô hình có thể và nên được nhân rộng — vì nó không đòi hỏi điều kiện đặc biệt nào, chỉ cần tinh thần học hỏi và sẵn sàng thay đổi.
+
+Kiến nghị:
+
+1. Phòng Giáo dục huyện Mỏ Cày Bắc xem xét tổ chức 1–2 buổi tập huấn chuyên đề về ứng dụng Google NotebookLM và quy trình deploy Vercel cho giáo viên các trường THCS trong huyện. Với thời lượng khoảng 3–4 giờ, giáo viên hoàn toàn có thể bắt đầu thực hành ngay.
+
+2. Nhân rộng quy trình tạo quiz và Mini-LMS sang các tổ bộ môn khác trong trường: Lịch sử, KHTN, Ngữ văn — đặc biệt những bộ môn cần ngữ liệu đa phương tiện hoặc thường xuyên tổ chức kiểm tra đồng loạt.
+
+3. Hỗ trợ giáo viên tiếp cận các công cụ AI pair-programming như Antigravity trong quá trình bồi dưỡng thường xuyên (BDTX), để không chỉ dừng lại ở việc "dùng phần mềm sẵn có" mà tiến đến "tự xây dựng phần mềm phù hợp với đặc thù lớp học của mình".
+
+4. Phát triển phân hệ Mini-LMS thành mô hình Flipped Classroom (lớp học đảo ngược) hoàn chỉnh cho môn Tiếng Anh — kết hợp video bản ngữ, thẻ ghi nhớ, quiz trực tuyến và dashboard phân tích — để nâng tầm chất lượng dạy học Tiếng Anh toàn huyện, thu hẹp khoảng cách giữa học sinh nông thôn và thành thị trong tiếp cận tiếng Anh chuẩn.
+
+5. Đưa kỹ năng sử dụng công cụ AI và quản lý mã nguồn vào nội dung bồi dưỡng giáo viên hàng năm, xây dựng đội ngũ "giáo viên số" có khả năng tự chủ phát triển học liệu trong giai đoạn chuyển đổi số.
+
+─────────────────────────────────────────────────────────────────────────────
+TÀI LIỆU THAM KHẢO
+─────────────────────────────────────────────────────────────────────────────
+
+1.  Bộ Giáo dục và Đào tạo (2021), Thông tư 22/2021/TT-BGDĐT về Quy định đánh giá học sinh trung học cơ sở và trung học phổ thông. Hà Nội.
+2.  Bộ Giáo dục và Đào tạo (2018), Thông tư 32/2018/TT-BGDĐT ban hành Chương trình Giáo dục phổ thông 2018. Hà Nội.
+3.  Bộ Giáo dục và Đào tạo (2023), Quyết định số 131/QĐ-TTg về Đề án "Tăng cường ứng dụng công nghệ thông tin và chuyển đổi số trong giáo dục và đào tạo giai đoạn 2022–2025".
+4.  Ebbinghaus, H. (1885), Über das Gedächtnis: Untersuchungen zur Experimentellen Psychologie. Leipzig: Duncker & Humblot (Bản dịch tiếng Anh: Memory: A Contribution to Experimental Psychology, 1913).
+5.  Google (2024), NotebookLM — AI-powered research tool documentation. Truy cập tại: notebooklm.google.com.
+6.  Luật Giáo dục 2019 (Luật số 43/2019/QH14). Quốc hội nước Cộng hòa XHCN Việt Nam.
+7.  Mayer, R. E. (2009), Multimedia Learning (2nd ed.). New York: Cambridge University Press.
+8.  Prince, M. (2004), "Does Active Learning Work? A Review of the Research", Journal of Engineering Education, 93(3), pp. 223–231.
+9.  Pham Thi Phuong Thao & Pham Ngoc Thach (2021), "Integrating Technology in English Language Teaching at Vietnamese Secondary Schools", VNU Journal of Science: Education Research, 37(2), pp. 1–12.
+10. Vercel Inc. (2024), Vercel Platform Documentation. Truy cập tại: vercel.com/docs.
+11. Website Bộ GD&ĐT (moet.gov.vn), Kho học liệu số và các văn bản chỉ đạo chuyển đổi số trong giáo dục năm 2024–2025.
+12. YouTube Learning Team (2023), How YouTube Supports Education Globally. Truy cập tại: blog.youtube/inside-youtube/learning.
+
+
+
+
+                                        Nhuận Phú Tân, ngày 31 tháng 03 năm 2026
+
+
+
+                                                    NGƯỜI MÔ TẢ SÁNG KIẾN
+                                                    (Ký tên và ghi rõ họ tên)
+
+
+
+
+                                                    ............................................
+                                                          Võ Ngọc Tùng

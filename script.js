@@ -188,7 +188,7 @@ function initCharts() {
     new Chart(ctxBefore, {
       type: 'doughnut',
       data: {
-        labels: ['Giỏi (15.3%)', 'Khá (32.5%)', 'TB (45.3%)', 'Yếu (6.9%)'],
+        labels: ['Giỏi (15.3%)', 'Khá (32.5%)', 'Đạt (45.3%)', 'Chưa đạt (6.9%)'],
         datasets: [{
           data: [15.3, 32.5, 45.3, 6.9],
           backgroundColor: [gold, blue, teal, red],
@@ -212,7 +212,7 @@ function initCharts() {
     new Chart(ctxAfter, {
       type: 'doughnut',
       data: {
-        labels: ['Giỏi (38.7%)', 'Khá (45.2%)', 'TB (15.1%)', 'Yếu (1.0%)'],
+        labels: ['Giỏi (38.7%)', 'Khá (45.2%)', 'Đạt (15.1%)', 'Chưa đạt (1.0%)'],
         datasets: [{
           data: [38.7, 45.2, 15.1, 1.0],
           backgroundColor: [gold, blue, teal, red],
@@ -236,7 +236,7 @@ function initCharts() {
     new Chart(ctxCompare, {
       type: 'bar',
       data: {
-        labels: ['Giỏi', 'Khá', 'Trung bình', 'Yếu'],
+        labels: ['Giỏi', 'Khá', 'Đạt', 'Chưa đạt'],
         datasets: [
           {
             label: '2023–2024 (Trước)',
