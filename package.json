@@ -8,7 +8,7 @@
     "start": "npx serve ."
   },
   "keywords": ["skkn", "eztool4teach", "education", "ai", "antigravity"],
-  "author": "Thầy Võ Tùng — THCS Nguyễn Văn Bánh",
+  "author": "Thầy Võ Ngọc Tùng — THCS Nguyễn Văn Bánh",
   "license": "MIT",
   "homepage": "https://github.com/wp37/SKKNVONGOCTUNG2526"
 }
